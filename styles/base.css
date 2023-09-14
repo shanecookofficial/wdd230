@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 5%;
+    background-color: #8d99ae;
+    color: #333333;
+}
+
+img {
+    flex-grow: 1; /* Let the image grow */
+    max-width: 33%; /* Limit the image's width to 1/3 of the header */
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+h1 {
+    flex-grow: 2; /* Let the h1 take up 2/3 of available space */
+    font-size: calc(12px + 6vw); /* Dynamic font size based on viewport width */
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #edf2f4;
+}
+
+nav ul {
+    text-align: center; /* Center the text within the <ul> */
+    padding: 0; /* Remove any padding */
+    list-style-type: none; /* Remove list bullet points */
+}
+
+nav ul li {
+    text-align: left; /* Left-align text within <li> */
+    margin: 0 auto; /* Center each <li> horizontally */
+    padding: 10px 0; /* Add vertical spacing between <li> items */
+    width: max-content; /* Make <li> items as wide as their content */
+    font-size: calc(12px + 3vw); /* Dynamic font size based on viewport width */
+}
+
+li a{
+    text-decoration: none;
+    color: #333333;
+}
+
+li a:hover {
+    color: #d90429;
+}
+
+main h2 {
+    font-size: calc(12px + 3vw); /* Dynamic font size based on viewport width */
+    background-color: #333333;
+    color: #edf2f4;
+    text-align: center;
+    padding: 3%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+section h3 {
+    background-color: #8d99ae;
+    text-align: center;
+    font-size: calc(12px + 2vw); /* Dynamic font size based on viewport width */
+    padding: 2%;
+}
+
+section ul {
+    text-align: left;
+    list-style-type: none; /* Remove list bullet points */
+    padding: 1%;
+}
+
+section ul li {
+    font-size: calc(12px + 1.5vw); /* Dynamic font size based on viewport width */
+    padding-left: 5%;
+}
+
+#info li {
+    text-align: left; /* Left-align text within <li> */
+    margin: 0 auto; /* Center each <li> horizontally */
+    padding: 10px 0; /* Add vertical spacing between <li> items */
+    width: max-content; /* Make <li> items as wide as their content */
+}
+
+footer {
+    background-color: #8d99ae;
+    color: #333333;
+    text-align: center;
+    font-size: calc(12px + 1vw); /* Dynamic font size based on viewport width */
+}
