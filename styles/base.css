@@ -72,7 +72,7 @@ section h3 {
     background-color: #8d99ae;
     text-align: center;
     font-size: calc(12px + 2vw); /* Dynamic font size based on viewport width */
-    padding: 2%;
+    padding: 5%
 }
 
 section ul {
