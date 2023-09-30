@@ -49,5 +49,9 @@
         padding-left: 5%;
     }
     
+    iframe {
+        justify-self: center;
+        grid-column: 1/3;
+    }
   }
   
