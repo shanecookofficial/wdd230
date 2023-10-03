@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #8ECAE6;
+    --secondary-color: #219EBC;
+    --accent-color: #FFB703;
+    --complimentary-color: #FB8500;
+    --text-on-dark: white;
+    --text-on-light: black;
+    --headers-titles: Georgia, 'Times New Roman', Times, serif;
+    --body-text: Arial, Helvetica, sans-serif;
+}
+
+#lightblue {
+    color: var(--primary-color);
+}
+
+#darkblue {
+    color: var(--secondary-color);
+}
+
+#yellow {
+    color: var(--accent-color);
+}
+
+#orange {
+    color: var(--complimentary-color);
+}
+
+#black {
+    background-color: var(--accent-color);
+    color: black;
+}
+
+#white {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#georgia {
+    font-family: var(--headers-titles);
+}
+
+#arial {
+    font-family: var(--body-text);
+}
+
+section {
+    padding: 5%;
+}
+
+section p, th, td {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 2vw;
+}
+
+section img {
+    max-width: 100%;
+}
+
+table {
+    padding: 3%;
+}
+
+th {
+    padding: 1%;
+}
