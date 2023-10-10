@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Discover Rexburg's economic vitality, community engagement, and local charm with the Rexburg Chamber of Commerce. We're your go-to resource for networking events, business growth support, visitor information, and community involvement in Rexburg. Explore the best places to stay, dine, and explore, find valuable resources for local businesses, and stay informed about community events and initiatives. Join us in fostering economic development, leadership, and a thriving community in Rexburg. Welcome to a vibrant future in the heart of Idaho!">
+    <meta name="author" content="Shane Cook">
+    <title>Rexburg Chamber of Commerce</title>
+    <!-- Add a link to your favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Website Title">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="url_to_social_media_image.jpg">
+    <meta property="og:url" content="https://www.website.com">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="../scripts/hamburger.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="images/RXB_Chamber_Logo_White.png" alt="Your Logo">
+        <h1>Rexburg Chamber of Commerce</h1>
+        <img class="social-media" id="social-media1" src="https://placehold.co/600x400?text=Social+Media+1">
+        <img class="social-media" id="social-media2" src="https://placehold.co/600x400?text=Social+Media+2">
+    </header>
+    <nav>
+        <button id="hamburger-button" class="hamburger">&#8801;</button>
+        <ul>
+            <li><a href="#" class="current">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="hero">
+            <img src="https://placehold.co/600x400?text=Hero+Image">
+            <a href="#">Join the Chamber of Commerce</a>
+        </section>
+        <section class="weather-card">
+            <h2>Weather in Rexburg</h2>
+            <div class="weather-info">
+                <div class="current-condition">
+                    <p>Current Condition: Sunny</p>
+                    <img src="sun-icon.png" alt="Sunny">
+                </div>
+                <div class="temperature">
+                    <p>Temperature: <span>75°F</span></p>
+                    <p>High: <span>80°F</span> | Low: <span>60°F</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <div class="event">
+                <h3>Annual Business Expo</h3>
+                <p>Date: October 15, 2023</p>
+                <p>Time: 9:00 AM - 5:00 PM</p>
+                <p>Description: Join us for the largest business expo in Rexburg. Connect with local businesses, attend workshops, and network with industry leaders.</p>
+                <p>Location: Rexburg Convention Center</p>
+                <p>Organizer: Rexburg Chamber of Commerce</p>
+                <a href="event-details.html" class="cta-button">Learn More</a>
+            </div>
+        </section>
+        <section class="company-spotlights">
+            <h2>Company Spotlights</h2>
+            <div class="spotlight">
+                <img src="company1-logo.png" alt="Company 1 Logo">
+                <h3>Company Name 1</h3>
+                <p>Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac felis eget dolor feugiat consectetur.</p>
+                <a href="company1-website.html" class="cta-button">Learn More</a>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Shane Cook | WDD 230 Project</p><br>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

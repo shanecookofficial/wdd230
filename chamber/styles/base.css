@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #219EBC;
+    --secondary-color: #8ECAE6;
+    --accent-color: #FFB703;
+    --complimentary-color: #FB8500;
+    --text-on-dark: white;
+    --text-on-light: #333;
+    --headers-titles: Georgia, 'Times New Roman', Times, serif;
+    --body-text: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 1%;
+}
+
+header img{
+    grid-column: 1/2;
+    width: 90%;
+    padding: 5%;
+}
+
+.social-media {
+    display: none;
+}
+
+header h1 {
+    grid-column: 2/7;
+    font-size: 4.5vw;
+    align-self: center;
+    color: white;
+    font-family: var(--headers-titles);
+    padding-left: 2%;
+}
+
+nav {
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+nav ul {
+    text-align: center; /* Center the text within the <ul> */
+    padding: 0; /* Remove any padding */
+    list-style-type: none; /* Remove list bullet points */
+}
+
+nav ul li {
+    text-align: left; /* Left-align text within <li> */
+    margin: 0 auto; /* Center each <li> horizontally */
+    padding: 10px 0; /* Add vertical spacing between <li> items */
+    width: max-content; /* Make <li> items as wide as their content */
+    font-size: calc(12px + 2vw); /* Dynamic font size based on viewport width */
+}
+
+.current {
+    border-bottom: 2px var(--complimentary-color) solid;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--text-on-dark);
+    font-family: var(--body-text);
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0;
+}
+
+#hero img {
+    max-width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/6;
+}
+
+#hero a {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    text-align: center;
+    background-color: var(--primary-color);
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    font-size: 5vw;
+    color: var(--text-on-dark);
+    border: 2px var(--accent-color) solid;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+#hero a:visited {
+    color: var(--text-on-dark);
+    background-color: var(--secondary-color);
+}
+
+section {
+    background-color: var(--secondary-color);
+    color: var(--text-on-light);
+    padding: 3%;
+    text-align: c;
+    font-family: var(--body-text);
+}
+
+section h2, section h3 {
+    font-family: var(--headers-titles);
+}
+
+section p {
+    padding: .5%;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-on-dark);
+    font-family: var(--body-text);
+    text-align: center;
+    padding: 2% 0 2% 0;
+}
