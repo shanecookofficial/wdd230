@@ -1,11 +1,16 @@
 :root {
     --primary-color: #003366;
-    --secondary-color: #336633;
+    --secondary-color: #BCC4DB;
     --accent-color: #C8FFBE;
+    --accent-color2: #800020;
     --text-on-dark: white;
     --text-on-light: #4D4D4D;
     --headers-titles: Georgia, 'Times New Roman', Times, serif;
     --body-text: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
 }
 
 header {
@@ -113,6 +118,7 @@ nav ul li a{
 a.active {
     background-color: var(--secondary-color);
     border-radius: 10px;
+    color: var(--text-on-light);
 }
 
 #hero {
@@ -122,7 +128,8 @@ a.active {
 }
 
 #hero img {
-    width: 100%;
+    max-width: 100%;
+    height: 100%;
 }
 
 #hero a {
@@ -136,17 +143,64 @@ a.active {
     font-family: var(--headers-titles);
     font-size: 8vw;
     text-decoration: none;
-    color: var(--text-on-dark);
+    color: var(--text-on-light);
     padding: 1%;
 }
 
 #hero a:hover {
-    background-color: rgb(51, 102, 51, .95);
+    background-color: rgb(188, 196, 219, .75);
 }
 
 #hero a:visited {
     background-color: rgb(0, 51, 102, .75);
     color: var(--text-on-dark);
+}
+
+main section {
+    background-color: var(--secondary-color);
+    color: var(--text-on-light);
+    padding: 3%;
+    font-family: var(--body-text);
+    margin-bottom: 3%;
+}
+
+section h2 {
+    font-family: var(--headers-titles);
+    margin: 0 auto;
+}
+
+#events a {
+    color: var(--accent-color2);
+    text-decoration: none;
+}
+
+#table-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#member-spotlights h1 {
+    color: var(--text-on-dark);
+    font-family: var(--headers-titles);
+    text-align: center;
+}
+
+.spotlight {
+    padding: 5%;
+}
+
+.spotlight p {
+    text-align: right;
+    display: block;
+}
+
+.spotlight a {
+    text-align: center;
+    display: block;
+    padding: 1%;
+    text-decoration: none;
+    color: var(--accent-color2);
 }
 
 footer {
