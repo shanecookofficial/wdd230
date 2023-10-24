@@ -24,9 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Initial toggle on page load
-    toggleMenu();
-
     hamburgerButton.addEventListener('click', () => {
         if (navList.style.display === 'block') {
             navList.style.display = 'none';
