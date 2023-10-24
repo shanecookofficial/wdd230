@@ -1,7 +1,7 @@
 :root {
     --primary-color: #003366;
     --secondary-color: #336633;
-    --accent-color: #;
+    --accent-color: #C8FFBE;
     --text-on-dark: white;
     --text-on-light: #4D4D4D;
     --headers-titles: Georgia, 'Times New Roman', Times, serif;
@@ -63,7 +63,7 @@ header {
 }
 
 #logos img {
-    width: 100%;
+    width: 90%;
 }
 
 #facebook-logo {
@@ -79,6 +79,11 @@ button {
     grid-column: 4/5;
     align-self: center;
     justify-self: center;
+    width: 30%;
+    height: 30%;
+    font-size: 5vw;
+    text-align: center;
+    padding: 0;
 }
 
 nav {
@@ -131,6 +136,8 @@ a.active {
     font-family: var(--headers-titles);
     font-size: 8vw;
     text-decoration: none;
+    color: var(--text-on-dark);
+    padding: 1%;
 }
 
 #hero a:hover {
@@ -140,4 +147,58 @@ a.active {
 #hero a:visited {
     background-color: rgb(0, 51, 102, .75);
     color: var(--text-on-dark);
+}
+
+footer {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    color: var(--text-on-dark);
+    font-family: var(--body-text);
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+#top-footer {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0;
+}
+
+#top-footer img {
+    grid-column: 1/2;
+    max-width: 75%;
+    justify-self: center;
+    padding-top: 3%;
+}
+
+#title-info h2 {
+    font-family: var(--headers-titles);
+    margin: 0;
+    text-align: left;
+    font-size: 5vw;
+    align-self: center;
+    padding: 3%;
+}
+
+#title-info p {
+    grid-column: 2/4;
+    margin: 0;
+    text-align: left;
+    padding: 3%;
+}
+
+#middle-footer {
+    grid-row: 2/3;
+    text-align: center;
+}
+
+#middle-footer a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+#bottom-footer {
+    grid-row: 3/4;
+    text-align: center;
 }
