@@ -127,7 +127,8 @@ a.active {
 }
 
 #hero a:hover {
-    background-color: rgb(198, 212, 255, .75);
+    background-color: var(--secondary-color);
+    color: white
 }
 
 main section {
@@ -241,6 +242,7 @@ footer {
     grid-row: 3/4;
     text-align: center;
 }
+
 .theme-container {
 width: 70px;
 height: 70px;

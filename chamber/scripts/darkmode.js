@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         root.style.setProperty('--accent-color', '#495057'); // dark accent
         root.style.setProperty('--accent-color2', '#6c757d'); // another dark accent
         root.style.setProperty('--text-on-dark', 'white'); // text on dark
-        root.style.setProperty('--text-on-light', '#adb5bd'); // text on light grey
+        root.style.setProperty('--text-on-light', 'white'); // text on light grey
         root.style.setProperty('--bs-dark', '#212529'); // dark mode background
 
         container.classList.replace("shadow-light", "shadow-dark");

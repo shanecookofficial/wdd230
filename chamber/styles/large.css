@@ -1,4 +1,16 @@
 @media (min-width: 1024px) {
+    :root {
+        --primary-color: #003366;
+        --secondary-color: #C6D4FF;
+        --accent-color: #C8FFBE;
+        --accent-color2: #800020;
+        --text-on-dark: white;
+        --text-on-light: #333;
+        --headers-titles: Georgia, 'Times New Roman', Times, serif;
+        --body-text: Arial, Helvetica, sans-serif;
+        --bs-dark: #212529;
+    }
+
     header {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -69,13 +81,7 @@
         padding: 0.5rem 1rem;
         border-radius: 5px;
     }
-
-    .navigation li a:hover {
-        background-color: #C6D4FF;
-        color: #333;
-    }
     
-
     #hero {
         grid-column: 1/6;
     }
