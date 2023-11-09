@@ -223,11 +223,17 @@ footer {
 #middle-footer {
     grid-row: 2/3;
     text-align: center;
+    display: grid;
+    grid-template-rows: auto auto;
 }
 
 #middle-footer a {
     text-decoration: none;
     color: var(--accent-color);
+}
+
+#social-media-container img {
+    max-width: 15%;
 }
 
 #bottom-footer {

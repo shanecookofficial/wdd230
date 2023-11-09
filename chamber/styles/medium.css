@@ -28,7 +28,36 @@
         margin-top: 5%;
     }
 
-    #top-footer img {
-        max-width: 50%;
+    footer {
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(6, 1fr);
+        margin: 3%;
+    }
+
+    #top-footer {
+        grid-row: 1/2;
+        grid-column: 1/5;
+    }
+
+    #title-info h2{
+        font-size: 3vw;
+    }
+
+    #middle-footer {
+        grid-row: 1/2;
+        grid-column: 5/7;
+        display: grid;
+        place-items: center;
+    }
+
+    #bottom-footer {
+        margin-top: 2%;
+        grid-row: 2/3;
+        grid-column: 1/7;
+    }
+
+    #site-detail-container {
+        display: flex;
+        justify-content: space-between;
     }
 }
