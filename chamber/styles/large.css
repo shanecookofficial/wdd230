@@ -30,10 +30,6 @@
         font-size: 2vw;
     }
 
-    #banner-title h2 {
-        font-size: 2vw;
-    }
-
     #logo {
         grid-column: 1/2;
         width: 50%;
