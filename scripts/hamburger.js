@@ -1,4 +1,3 @@
-// hamburger.js
 document.addEventListener('DOMContentLoaded', function () {
     const hamburgerButton = document.getElementById('hamburger-button');
     const navList = document.querySelector('nav ul');
@@ -10,17 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
             hamburgerButton.style.display = 'none';
             navList.style.display = 'block';
         } else {
-            // Show the hamburger button and toggle the menu for smaller screens
+            // Show the hamburger button and close the menu for smaller screens
             hamburgerButton.style.display = 'block';
-            if (navList.style.display === 'block') {
-                navList.style.display = 'none';
-                // Change the button text to '☰' (hamburger) when the menu is hidden
-                hamburgerButton.innerHTML = '&#8801;';
-            } else {
-                navList.style.display = 'block';
-                // Change the button text to '✕' (close) when the menu is visible
-                hamburgerButton.innerHTML = '&#10006;';
-            }
+            navList.style.display = 'none'; // Set the initial state to closed
+            hamburgerButton.innerHTML = '&#8801;'; // Change the button text to '☰' (hamburger)
         }
     }
 
@@ -38,10 +30,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const navItems = document.querySelectorAll('nav ul li a');
     navItems.forEach(item => {
         item.addEventListener('click', () => {
-            navList.style.display = 'none';
-            hamburgerButton.innerHTML = '&#8801;';
+            if (window.innerWidth < 1024) {
+                navList.style.display = 'none';
+                hamburgerButton.innerHTML = '&#8801;';
+            }
         });
     });
+
+    // Add an initial call to toggleMenu to set the initial state based on the viewport width
+    toggleMenu();
 
     // Add a resize event listener to adjust the menu based on viewport width
     window.addEventListener('resize', toggleMenu);
