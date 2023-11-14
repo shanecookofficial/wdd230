@@ -22,20 +22,28 @@
 </head>
 <body>
     <header>
-        <img src="images/optimized_headshot.jpeg" alt="Shane Cook's Professional Photo">
+        <img id="headshot" src="images/optimized_headshot.jpeg" alt="Shane Cook's Professional Photo">
         <h1>Shane C. Cook</h1>
-    </header>
-    <nav>
         <button id="hamburger-button" class="hamburger">&#8801;</button>
-        <ul>
-            <li><a href="/index.html" class="current">Home</a></li>
-            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="chamber/">Chamber</a></li>
-            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
-            <li><a target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/ot/job/13?lang=eng&id=p5#p5">Scripture</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="current">Home</a></li>
+                <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+                <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+                <li><a target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/ot/job/13?lang=eng&id=p5#p5">Scripture</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
+        <div class="hero">
+            <h2>Idaho Falls Temple</h2>
+            <picture>
+                <source srcset="lesson06/images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="lesson06/images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="lesson06/images/hero-large.webp" alt="Idaho Falls Temple">
+            </picture>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
@@ -45,7 +53,7 @@
                 <li>03: <a href="images/css_combinators_proof.png" target="_blank">CSS Combinators</a> | <a href="https://codepen.io/shanecookofficial/pen/vYvjyMm" target="_blank">CSS Psuedo-elements</a> | <a href="https://codepen.io/shanecookofficial/pen/JjwvEPX" target="_blank">Responsive Hamburger Menu</a></li>
                 <li>04: <a target="_blank" href="https://codepen.io/shanecookofficial/pen/WNPZwEX">CSS Pseudo-Classes</a></li>
                 <li>05: <a target="_blank" href="lesson05/bom.html">DOM Manipulation</a></li>
-                <li>06: <a target="_blank" href="lesson06/landscape.webp">WebP</a></li>
+                <li>06: <a target="_blank" href="lesson06/images/landscape.webp">WebP</a></li>
             </ul>
         </section>
         <section class="card">
