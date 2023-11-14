@@ -5,8 +5,13 @@
     --complimentary-color: #FB8500;
     --text-on-dark: white;
     --text-on-light: black;
-    --headers-titles: Georgia, 'Times New Roman', Times, serif;
-    --body-text: Arial, Helvetica, sans-serif;
+    --headers-titles: 'Montserrat', sans-serif;
+    --body-text: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4vw;
+    margin: 5% 0 5% 0;
 }
 
 #lightblue {

@@ -45,8 +45,8 @@ header {
     grid-column: 2/3;
     text-align: left;
     margin: 0;
-    font-size: 8vw;
     font-family: var(--headers-titles);
+    font-size: 5vw;
 }
 
 button {
