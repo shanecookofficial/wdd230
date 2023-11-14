@@ -21,7 +21,7 @@ header {
     position: relative;
 }
 
-.hero h2 {
+.hero p {
     grid-column: 1/2;
     grid-row: 1/2;
     z-index: 1;
@@ -30,6 +30,9 @@ header {
     color: white;
     border-radius: 15px;
     align-self: center;
+    font-size: 6vw;
+    text-align: center;
+    padding: 2.5%;
 }
 
 .hero picture {
