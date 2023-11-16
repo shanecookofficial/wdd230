@@ -1,7 +1,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const apiKey = process.env.WEATHER_API_KEY; // Access the API_KEY environment variable
+const apiKey = 'fe02b3f5d845399f215fd3243dea6312';
 
 if (!apiKey) {
   console.error('API_KEY is not defined. Make sure you have set it as a GitHub secret.');
