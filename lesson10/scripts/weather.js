@@ -24,16 +24,25 @@ async function apiFetch() {
   }
 }
 
+function capitalizeWords(str) {
+  return str.split(' ').map(word => {
+    if (word.length > 0) {
+      return word[0].toUpperCase() + word.slice(1);
+    }
+    return word;
+  }).join(' ');
+}
+
 function displayResults(data) {
   const fahrenheitTemp = data.main.temp;
+  const capitalizedDescription = data.weather.map(event => capitalizeWords(event.description)).join(', ');
 
   currentTemp.innerHTML = `${Math.round(fahrenheitTemp)}&deg;F`;
   const iconCode = data.weather[0].icon;
   const iconSrc = `https://openweathermap.org/img/w/${iconCode}.png`;
-  const description = data.weather[0].description;
 
   weatherIcon.setAttribute('src', iconSrc);
-  captionDesc.textContent = `${capitalizeWords(description)}`;
+  captionDesc.textContent = capitalizedDescription;
 }
 
 apiFetch();
