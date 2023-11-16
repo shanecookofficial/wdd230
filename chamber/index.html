@@ -14,6 +14,7 @@
     <script src="../scripts/hamburger.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
     <script src="../chamber/scripts/darkmode.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
@@ -40,7 +41,12 @@
             </ul>
         </nav>
         <div id="hero">
-            <img src="images/teton.jpg" alt="hero image">
+            <picture>
+                <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
+                <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">
+                <img src="images/wdd230-org-large.webp" alt="Example Image">
+            </picture>
+            <!--<img src="images/teton.jpg" alt="hero image">-->
             <a href="#">Join the Chamber</a>
         </div>
     </header>
@@ -60,20 +66,20 @@
             <div id="table-container">
                 <table>
                     <tr>
-                        <td><img alt="weather icon" src="https://unsplash.it/100/100"></td>
+                        <td><img id="weather-icon" alt="weather icon" src="#"></td>
                         <td>
-                            500°C<br>
-                            <strong>Partly Rainy</strong>
+                            <span id="current-temp"></span><br>
+                            <strong><span id="weather-feel"></span></strong>
                         </td>
                     </tr>
                     <tr>
                         <td>Humidity: </td>
-                        <td>200%</td>
+                        <td id="humidity"></td>
                     </tr>
                     <tr>
                         <td>Wind Chill: </td>
-                        <td>Brr so cold</td>
-                    </tr>
+                        <td id="wind-chill"></td>
+                    </tr>                    
                 </table>
             </div>
         </section>
