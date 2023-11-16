@@ -43,6 +43,7 @@ header {
 .hero img {
     width: 100%;
     height: auto;
+    position: absolute;
   }
 
 #headshot {
@@ -102,6 +103,7 @@ main h2 {
     color: #333333;
     text-align: center;
     padding: 3%;
+    margin-top: 5%;
 }
 
 .card {
