@@ -41,7 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function getChapterList() {
-        return JSON.parse(localStorage.getItem('myFavBOMList'));
+        const data = JSON.parse(localStorage.getItem('myFavBOMList'));
+        return data;
     }
 
     function deleteChapter(chapter) {
