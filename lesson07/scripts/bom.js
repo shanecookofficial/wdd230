@@ -1,39 +1,53 @@
-// Step 4: JavaScript for handling the input and list
 document.addEventListener('DOMContentLoaded', function () {
     const input = document.querySelector('#favchap');
     const button = document.querySelector('button');
     const list = document.querySelector('#list');
 
-    button.addEventListener('click', function() {
-        if (input.value.trim() !== '') { // Check if the input is not empty or just whitespace
-            // Create a new list item
-            const li = document.createElement('li');
-            
-            // Create a delete button
-            const deleteButton = document.createElement('button');
-            deleteButton.textContent = '❌'; // Adding an 'X' symbol to the button
-            
-            // Set the text of the list item to the input value
-            li.textContent = input.value;
-            
-            // Append the delete button to the list item
-            li.append(deleteButton);
-            
-            // Append the list item to the list
-            list.append(li);
+    let chaptersArray = getChapterList() || [];
 
-            // Add an event listener to the delete button to remove the item from the list
-            deleteButton.addEventListener('click', function () {
-                list.removeChild(li);
-                input.focus(); // Put focus back to the input element
-            });
+    chaptersArray.forEach(chapter => {
+        displayList(chapter);
+    });
 
-            // Clear the input field and refocus on the input field for new entries
+    button.addEventListener('click', () => {
+        if (input.value.trim() !== '') {
+            displayList(input.value);
+            chaptersArray.push(input.value);
+            setChapterList(chaptersArray);
             input.value = '';
             input.focus();
         } else {
-            // If input is empty, just focus back to the input, or you can show an alert/message
             input.focus();
         }
     });
+
+    function displayList(item) {
+        let li = document.createElement('li');
+        let deleteButton = document.createElement('button');
+        li.textContent = item;
+        deleteButton.textContent = '❌';
+        deleteButton.classList.add('delete');
+        li.append(deleteButton);
+        list.append(li);
+        deleteButton.addEventListener('click', function () {
+            list.removeChild(li);
+            deleteChapter(li.textContent);
+            input.focus();
+        });
+    }
+
+    function setChapterList(chapters) {
+        localStorage.setItem('myFavBOMList', JSON.stringify(chapters));
+    }
+
+    function getChapterList() {
+        const data = JSON.parse(localStorage.getItem('myFavBOMList'));
+        return data;
+    }
+
+    function deleteChapter(chapter) {
+        chapter = chapter.slice(0, chapter.length - 1);
+        chaptersArray = chaptersArray.filter(item => item !== chapter);
+        setChapterList(chaptersArray);
+    }
 });
