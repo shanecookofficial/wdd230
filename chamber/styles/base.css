@@ -282,3 +282,47 @@ box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
     animation-duration: 1s;
     animation-direction: alternate;
 }
+
+.photo-gallery picture img{
+    max-width: 100%;
+}
+
+#discover-content {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.calendar iframe{
+    max-width: 100%;
+    max-height: 350px;
+}
+
+.info-title {
+    cursor: pointer;
+    /* Additional styling */
+}
+
+.info-title .toggle-indicator {
+    /* Style for the toggle indicator */
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.info-content {
+    display: none;
+    /* Additional styling for the content */
+}
+
+.info-content ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.info-content li {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 0;
+}

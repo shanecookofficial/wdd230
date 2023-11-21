@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shane Cook's WDD 230 Chamber of Commerce Project">
+    <meta name="author" content="Shane Cook">
+    <meta property="og:url" content="https://shanecookofficial.github.io/wdd230/chamber/index.html" />
+    <meta property="og:title" content="Rexburg Chamber of Commerce (not official)" />
+    <meta property="og:image" content="https://images.discerningassets.com/image/upload/c_fit,h_1000,w_1000/c_fit,fl_relative,h_1.0,o_100,w_1.0/v1610732350/Rexburg_Idaho_Temple_-_Field_Sunset_Scott_Jarvie_web_k6rvsc.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Discover | Rexburg Chamber of Commerce</title>
+    <script src="../scripts/hamburger.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/display-info.js" defer></script>
+    <script src="../chamber/scripts/darkmode.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-container shadow-dark">
+        <img id="theme-icon"    src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="ERR">
+    </div>
+    <header>
+        <div id="banner">
+            <img id="logo" src="images/RXB_Chamber_Logo_White.png" alt="logo">
+            <div id="banner-title">
+                <h1>Rexburg<br>Chamber of Commerce</h1>
+            </div>
+            <button id="hamburger-button">&#8801;</button>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Discover" class="active">Discover</a></li>
+                <li><a href="#" title="Directory">Directory</a></li>
+                <li><a href="#" title="Join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="discover-content">
+        <aside class="sidebar">
+            <section class="demographics">
+                <h2>Demographics</h2>
+                <ul>
+                    <li>Population: Approx. 40,000</li>
+                    <li>Average Household Income: $44,034</li>
+                    <li>Educational Attainment: 39.7% Bachelor's Degree or higher</li>
+                    <li>Housing: 35.6% Homeownership</li>
+                </ul>
+            </section>
+            <section class="calendar">
+                <iframe src="https://calendar.google.com/calendar/embed?src=khsu1ommecc2ed37b9fb13859l591hu7@import.calendar.google.com" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </section>
+            <section class="local-attractions">
+                <h2>Local Attractions</h2>
+                <div class="info-section" id="parks-section">
+                    <h3 class="info-title">
+                        <span class="toggle-indicator">+</span>
+                        <span class="title-text">Parks</span>
+                    </h3>
+                    <div class="info-content">
+                        <ul>
+                            <li>
+                                <strong>Porter Park</strong>
+                                <br>
+                                S 2nd W & 3rd W
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.google.com/?q=Porter+Park+Rexburg,ID+83440" target="_blank">Google Maps</a>
+                            </li>
+                            <li>
+                                <strong>Smith Park</strong>
+                                <br>
+                                E Main St, Rexburg
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.google.com/?q=Smith+Park+Rexburg,ID+83440" target="_blank">Google Maps</a>
+                            </li>
+                            <li>
+                                <strong>Nature Park</strong>
+                                <br>
+                                5th West & 3rd North
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.google.com/?q=Nature+Park+Rexburg,ID+83440" target="_blank">Google Maps</a>
+                            </li>
+                            <li>
+                                <strong>Eagle Park</strong>
+                                <br>
+                                4th North Eagle Park Drive
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.google.com/?q=Eagle+Park+Rexburg,ID+83440" target="_blank">Google Maps</a>
+                            </li>
+                            <li>
+                                <strong>Evergreen Park</strong>
+                                <br>
+                                766 Lodgepole St
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.google.com/?q=Evergreen+Park+Rexburg,ID+83440" target="_blank">Google Maps</a>
+                            </li>
+                            <li>
+                                <strong>Riverside Park</strong>
+                                <br>
+                                50 W 2nd N
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.google.com/?q=Riverside+Park+Rexburg,ID+83440" target="_blank">Google Maps</a>
+                            </li>
+                            <li>
+                                <strong>Park Street Park</strong>
+                                <br>
+                                513 Park St
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.google.com/?q=Park+Street+Park+Rexburg,ID+83440" target="_blank">Google Maps</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h3 class="info-title">
+                        <span class="toggle-indicator">+</span>
+                        <span class="title-text">Museums</span> 
+                    </h3>
+                    <div class="info-content">
+                        <ul>
+                            <li>
+                                <strong>Legacy Flight Museum</strong>
+                                <br>
+                                400 Airport Rd
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/wha9eyP6zXowLt1W9" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="https://www.rexburg.org/area-info/page/legacy-flight-museum#:~:text=we%20enjoy%20today.-,Operating%20Hours,-Labor%20Day%20to">Operating Hours</a>
+                                <br>
+                                <a href="https://www.rexburg.org/area-info/page/legacy-flight-museum#:~:text=208)%20359%2D5905-,Pricing,-Adults%C2%A0">Pricing</a>
+                            </li>
+                            <li>
+                                <strong>Museum of Rexburg</strong>
+                                <br>
+                                51 N Center St
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/epwyPnobgHrvnz676">Google Maps</a>
+                                <br>
+                                <a href="https://museum.rexburg.org/#:~:text=208)%20359%2D3063-,Hours,-The%20museum%20will">Operating Hours</a>
+                                <br>
+                                <a href="https://museum.rexburg.org/#:~:text=3%20p.m.-,Prices,-3%20and%20Under">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-section">
+                    <h3 class="info-title">
+                        <span class="toggle-indicator">+</span>
+                        <span class="title-text">Historical Sites</span> 
+                    </h3>
+                    <div class="info-content">
+                        <p>Details about historical sites...</p>
+                    </div>
+                </div>
+            </section>
+            <section class="visitor-info">
+                <h2>Visitor Information</h2>
+                <div class="info-section">
+                    <h3 class="info-title">
+                        <span class="toggle-indicator">+</span>
+                        <span class="title-text">Transportation</span> 
+                    </h3>
+                    <div class="info-content">
+                        <p>Details about transportation...</p>
+                    </div>
+                </div>
+                <div class="info-section">
+                    <h3 class="info-title">
+                        <span class="toggle-indicator">+</span>
+                        <span class="title-text">Accommodation</span> 
+                    </h3>
+                    <div class="info-content">
+                        <p>Details about accommodation...</p>
+                    </div>
+                </div>
+                <div class="info-section">
+                    <h3 class="info-title">
+                        <span class="toggle-indicator">+</span>
+                        <span class="title-text">Local Attractions</span> 
+                    </h3>
+                    <div class="info-content">
+                        <p>Details about local attractions...</p>
+                    </div>
+                </div>
+                <div class="info-section">
+                    <h3 class="info-title">
+                        <span class="toggle-indicator">+</span>
+                        <span class="title-text">Eating and Dining</span> 
+                    </h3>
+                    <div class="info-content">
+                        <p>Details about eating and dining...</p>
+                    </div>
+                </div>
+                <div class="info-section">
+                    <h3 class="info-title">
+                        <span class="toggle-indicator">+</span>
+                        <span class="title-text">Emergency Contacts</span> 
+                    </h3>
+                    <div class="info-content">
+                        <p>Details about emergency contacts...</p>
+                    </div>
+                </div>
+            </section>            
+        </aside>
+        <section class="photo-gallery">
+            <h2>Explore Rexburg</h2>
+            <picture>
+                <source srcset="images/rexburgtemple_small.webp" media="(max-width: 500px)">
+                <source srcset="images/rexburgtemple_medium.webp" media="(max-width: 1000px)">
+                <img src="images/rexburgtemple_large.webp" alt="Rexburg Idaho Temple" loading="lazy">
+                <p><strong>Rexburg Idaho LDS Temple: A Beacon of Serenity</strong><br>This majestic temple stands as a symbol of faith and a center of community spirit in Rexburg. With its striking architecture and peaceful surroundings, it offers a tranquil retreat in the heart of Idaho's natural beauty.</p>
+            </picture>
+            <picture>
+                <source srcset="images/byui_small.webp" media="(max-width: 500px)">
+                <source srcset="images/byui_medium.webp" media="(max-width: 1000px)">
+                <img src="images/byui_large.webp" alt="Brigham Young University - Idaho" loading="lazy">
+                <p><strong>Brigham Young University - Idaho: Cultivating Minds and Spirits</strong><br>Nestled in the heart of Rexburg, BYU-Idaho is renowned for its commitment to academic excellence and spiritual growth. Its picturesque campus is a hub of innovation, learning, and community engagement, shaping the leaders of tomorrow.</p>
+            </picture>
+            <picture>
+                <source srcset="images/porter_park_small.webp" media="(max-width: 500px)">
+                <source srcset="images/porter_park_medium.webp" media="(max-width: 1000px)">
+                <img src="images/porter_park_large.webp" alt="Porter Park" loading="lazy">
+                <p><strong>Porter Park: Rexburg's Natural Oasis</strong><br>A cherished green space in the heart of Rexburg, Porter Park offers a serene escape with its lush lawns, vibrant flower beds, and family-friendly amenities. It's a perfect spot for community gatherings, leisurely strolls, and enjoying the simple joys of nature.</p>
+            </picture>
+            <picture>
+                <source srcset="images/rmountain_small.webp" media="(max-width: 500px)">
+                <source srcset="images/rmountain_medium.webp" media="(max-width: 1000px)">
+                <img src="images/rmountain_large.webp" alt="R Mountain" loading="lazy">
+                <p><strong>R Mountain: Rexburg's Iconic Landmark</strong><br>Towering over the valley, R Mountain is a beloved symbol of Rexburg's vibrant spirit and adventurous soul. Offering panoramic views and a sense of adventure, it's a favorite destination for hikers and nature enthusiasts.</p>
+            </picture>
+            <picture>
+                <source srcset="images/legacyflightmuseum_small.webp" media="(max-width: 500px)">
+                <source srcset="images/legacyflightmuseum_medium.webp" media="(max-width: 1000px)">
+                <img src="images/legacyflightmuseum_large.webp" alt="Legacy Flight Museum" loading="lazy">
+                <p><strong>Rexburg Legacy Flight Museum: A Journey Through Aviation History</strong><br>This museum is a treasure trove of aviation heritage, showcasing a remarkable collection of aircraft and artifacts that narrate the fascinating story of flight. It's a must-visit destination for history buffs and aviation enthusiasts alike.</p>
+            </picture>
+            <picture>
+                <source srcset="images/tetonlakesgolfcourse_small.webp" media="(max-width: 500px)">
+                <source srcset="images/tetonlakesgolfcourse_medium.webp" media="(max-width: 1000px)">
+                <img src="images/tetonlakesgolfcourse_large.webp" alt="Teton Lakes Golf Course" loading="lazy">
+                <p><strong>Teton Lakes Golf Course: Rexburg's Scenic Fairways</strong>With its lush greens, challenging holes, and breathtaking views of the Teton Range, this golf course offers both a serene escape and an exhilarating challenge for golfers of all skill levels.</p>
+            </picture>
+        </section>
+    </main>    
+    <footer>
+        <div id="top-footer">
+            <img src="images/RXB_Chamber_Logo_White.png" alt="logo">
+            <div id="title-info">
+                <h2>
+                    Rexburg<br>
+                    Chamber of Commerce
+                </h2>
+                <p>
+                    167 W Main St #2,<br>
+                    Rexburg, ID 83440
+                </p>
+            </div>
+        </div>
+        <div id="middle-footer">
+            <p>
+                rexburg@chamber.org<br>
+                <a href="tel:2083565700">208-356-5700</a><br>
+                &#128205; Location Map
+            </p>
+            <div id="social-media-container">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook-logo-white.png" alt="Facebook logo">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="images/x-logo-white.png" alt="X logo">
+                </a>
+            </div>
+        </div>    
+        <div id="bottom-footer">
+            <hr>
+            <div id="site-detail-container">
+                <p>&copy;<span id="year"></span> Rexburg Chamber</p>
+                <p>Shane Cook</p>
+                <p>WDD 230 Project</p>
+                <p> Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
