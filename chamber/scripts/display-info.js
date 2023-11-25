@@ -35,3 +35,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     localStorage.setItem('lastVisit', currentDate.toISOString());
 });
+
+document.getElementById('dateTime').value = Date.now();
