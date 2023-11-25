@@ -35,8 +35,8 @@
         </div>
         <nav>
             <ul class="navigation">
-                <li><a href="#" title="Home">Home</a></li>
-                <li><a href="#" title="Discover" class="active">Discover</a></li>
+                <li><a href="/chamber/index.html" title="Home">Home</a></li>
+                <li><a href="/chamber/discover.html" title="Discover" class="active">Discover</a></li>
                 <li><a href="#" title="Directory">Directory</a></li>
                 <li><a href="#" title="Join">Join</a></li>
             </ul>
@@ -44,6 +44,9 @@
     </header>
     <main id="discover-content">
         <aside class="sidebar">
+            <section class="visitor-message">
+                <p id="visitMessage"></p>
+            </section>            
             <section class="demographics">
                 <h2>Demographics</h2>
                 <ul>
@@ -148,9 +151,9 @@
                                 <br>
                                 <a href="https://maps.app.goo.gl/wha9eyP6zXowLt1W9" target="_blank">Google Maps</a>
                                 <br>
-                                <a href="https://www.rexburg.org/area-info/page/legacy-flight-museum#:~:text=we%20enjoy%20today.-,Operating%20Hours,-Labor%20Day%20to">Operating Hours</a>
+                                <a href="https://www.rexburg.org/area-info/page/legacy-flight-museum#:~:text=we%20enjoy%20today.-,Operating%20Hours,-Labor%20Day%20to" target="_blank">Operating Hours</a>
                                 <br>
-                                <a href="https://www.rexburg.org/area-info/page/legacy-flight-museum#:~:text=208)%20359%2D5905-,Pricing,-Adults%C2%A0">Pricing</a>
+                                <a href="https://www.rexburg.org/area-info/page/legacy-flight-museum#:~:text=208)%20359%2D5905-,Pricing,-Adults%C2%A0" target="_blank">Pricing</a>
                             </li>
                             <li>
                                 <strong>Museum of Rexburg</strong>
@@ -159,11 +162,11 @@
                                 <br>
                                 Rexburg, ID 83440
                                 <br>
-                                <a href="https://maps.app.goo.gl/epwyPnobgHrvnz676">Google Maps</a>
+                                <a href="https://maps.app.goo.gl/epwyPnobgHrvnz676" target="_blank">Google Maps</a>
                                 <br>
-                                <a href="https://museum.rexburg.org/#:~:text=208)%20359%2D3063-,Hours,-The%20museum%20will">Operating Hours</a>
+                                <a href="https://museum.rexburg.org/#:~:text=208)%20359%2D3063-,Hours,-The%20museum%20will" target="_blank">Operating Hours</a>
                                 <br>
-                                <a href="https://museum.rexburg.org/#:~:text=3%20p.m.-,Prices,-3%20and%20Under">Pricing</a>
+                                <a href="https://museum.rexburg.org/#:~:text=3%20p.m.-,Prices,-3%20and%20Under" target="_blank">Pricing</a>
                             </li>
                         </ul>
                     </div>
@@ -174,7 +177,41 @@
                         <span class="title-text">Historical Sites</span> 
                     </h3>
                     <div class="info-content">
-                        <p>Details about historical sites...</p>
+                        <ul>
+                            <li>
+                                <strong>Rexburg Tabernacle Civic Center</strong>
+                                <br>
+                                51 N. Center
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/YYU6vXtNp43i5CpW9" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="https://www.rexburg.com/view/rexburg/tabernacle/#:~:text=the%20flood%20damage.-,Hours,-Winter%3A%20October%20%E2%80%93%20April" target="_blank">Operating Hours</a>
+                            </li>
+                            <li>
+                                <strong>Jacob Spori Building</strong>
+                                <br>
+                                48 S 2nd E
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/KWx93wdCmzFzb9R19" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="https://www.byui.edu/spori-gallery/#:~:text=and%20His%20mission.-,GALLERY%20HOURS,-Monday%2DFriday%3A%209" target="_blank">Operating Hours</a>
+                            </li>
+                            <li>
+                                <strong>The Romance Theater</strong>
+                                <br>
+                                2 E Main St
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/r3qSUVJGiQW6c7t87" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="https://www.rexburgarts.org/tickets" target="_blank">Operating Hours</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -186,7 +223,22 @@
                         <span class="title-text">Transportation</span> 
                     </h3>
                     <div class="info-content">
-                        <p>Details about transportation...</p>
+                        <ul>
+                            <li>
+                                <strong>Salt Lake Express</strong>
+                                <br>
+                                <a href="tel:2086568824" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://saltlakeexpress.com/" target="_blank">Website</a>
+                            </li>
+                            <li>
+                                <strong>St. George Shuttle</strong>
+                                <br>
+                                <a href="tel:2084256101" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://stgshuttle.com/" target="_blank">Website</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="info-section">
@@ -195,16 +247,86 @@
                         <span class="title-text">Accommodation</span> 
                     </h3>
                     <div class="info-content">
-                        <p>Details about accommodation...</p>
-                    </div>
-                </div>
-                <div class="info-section">
-                    <h3 class="info-title">
-                        <span class="toggle-indicator">+</span>
-                        <span class="title-text">Local Attractions</span> 
-                    </h3>
-                    <div class="info-content">
-                        <p>Details about local attractions...</p>
+                        <ul>
+                            <li>
+                                <strong>Springhill Suites by Marriot</strong>
+                                <br>
+                                1177 S Yellowstone Hwy
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/gz9yexW8GHGbnYwx5" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2083563003" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://www.marriott.com/en-us/hotels/idarx-springhill-suites-rexburg/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0" target="_blank">Website</a>
+                            </li>
+                            <li>
+                                <strong>Hampton Inn & Suites</strong>
+                                <br>
+                                1195 S Yellowstone Hwy
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/1QVFK231CgzMWaR87" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2084970424" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://www.hilton.com/en/hotels/idarxhx-hampton-suites-rexburg/?SEO_id=GMB-AMER-HX-IDARXHX&y_source=1_OTIzNjE2MC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D" target="_blank">Website</a>
+                            </li>
+                            <li>
+                                <strong>AmericInn by Wyndham</strong>
+                                <br>
+                                1098 Golden Beauty D
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/DvGgJs2vPyLEpMJZ7" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2084970424" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://www.hilton.com/en/hotels/idarxhx-hampton-suites-rexburg/?SEO_id=GMB-AMER-HX-IDARXHX&y_source=1_OTIzNjE2MC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D" target="_blank">Website</a>
+                            </li>
+                            <li>
+                                <strong>Super 8 by Wyndham</strong>
+                                <br>
+                                215 W Main S
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/ix7jSmWfn8nKpxqMA" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2088819772" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://www.wyndhamhotels.com/super-8/rexburg-idaho/super-8-rexburg/overview?CID=LC:yytq4fvvehxh7se:03023" target="_blank">Website</a>
+                            </li>
+                            <li>
+                                <strong>SureStay Plus By Best Western</strong>
+                                <br>
+                                885 W Main St
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/9ijaKYjCL9ntFf3E8" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2083591311" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://www.bestwestern.com/en_US/book/hotel-rooms.53066.html?iata=90000026&ssob=BLSSH0004G&cid=BLSSH0004G:google:gmb:53066" target="_blank">Website</a>
+                            </li>
+                            <li>
+                                <strong>Motel 6</strong>
+                                <br>
+                                1360 S 12th W
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/41CL4sm18oEiauDu7" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2089327201" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://www.motel6.com/en/home/motels.id.rexburg.8732.html?lid=Local_Milestone_8732&travelAgentNumber=TA001305&corporatePlusNumber=CP792N5W&utm_source=google%2520my%2520business&utm_medium=listing&utm_campaign=visit%2520website" target="_blank">Website</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="info-section">
@@ -213,16 +335,135 @@
                         <span class="title-text">Eating and Dining</span> 
                     </h3>
                     <div class="info-content">
-                        <p>Details about eating and dining...</p>
+                        <ul>
+                            <li>
+                                <strong>Fresco Kitchen and Grill</strong>
+                                <br>
+                                <em>Stone-fired pizzas, fresh salads, and a unique selection of entrees</em>
+                                <br>
+                                1181 S Yellowstone Hwy
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/wEt7aStsMHWK5Zup6" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2084970408" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://frescokitchengrill.com/" target="_blank">Website</a>
+                            </li>
+                            <li>
+                                <strong>Red Rabbit Grill</strong>
+                                <br>
+                                <em>Hearty breakfasts, gourmet burgers, and flavorful steak entrees</em>
+                                <br>
+                                155 W Main St #8
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/MDyQB4qFniXsnAcS6" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2087150002" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://www.redrabbitgrill.com/rexburg-home" target="_blank">Website</a>
+                            </li>
+                            <li>
+                                <strong>JB's</strong>
+                                <br>
+                                <em>Classic breakfasts, homestyle platters, and signature pasta dishes</em>
+                                <br>
+                                150 W Main St
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/31s1RvqnvZXDkrZn6" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2083564927" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://www.redrabbitgrill.com/rexburg-home" target="_blank">Website</a>
+                            </li>
+                            <li>
+                                <strong>Righteous Slice</strong>
+                                <br>
+                                <em>Craft pizzas with fresh, quality ingredients and a selection of unique beverages</em>
+                                <br>
+                                175 W. 200 S #100
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/SH9CRUCLsAjxZ9Je7" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2083564927" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://www.righteousslice.com/" target="_blank">Website</a>
+                            </li>
+                            <li>
+                                <strong>Blister's BBQ</strong>
+                                <br>
+                                <em>Smoked BBQ favorites, classic sandwiches, and unique rice bowls with an array of specialty sides</em>
+                                <br>
+                                15 N 12th W (inside Mother Hibbard's Country Store)
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/QSFcUxdREzUudN9ZA" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2083563965" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://blistersbbq.com/" target="_blank">Website</a>
+                            </li>
+                            <li>
+                                <strong>Da Pineapple Grill</strong>
+                                <br>
+                                <em>Authentic Hawaiian cuisine and sushi, featuring Hawaiian Pok'e, mixed plates, with a selection of tropical drinks.</em>
+                                <br>
+                                383 S 2nd W, Rexburg
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/QSFcUxdREzUudN9ZA" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:2083564398" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://www.pineapplegrill.com/" target="_blank">Website</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="info-section">
                     <h3 class="info-title">
                         <span class="toggle-indicator">+</span>
-                        <span class="title-text">Emergency Contacts</span> 
+                        <span class="title-text">Emergency Services</span> 
                     </h3>
                     <div class="info-content">
-                        <p>Details about emergency contacts...</p>
+                        <h4 id="emergency" >If you are having an emergency that requires immediate attention, please call <a href="tel:911">9-1-1</a></h4>
+                        <ul>
+                            <li>
+                                <strong>Madison Fire Department</strong>
+                                <br>
+                                26 N Center St
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/e5qAC7DSbeuJfiiX7" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:+12083593010" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://fdmadison.org/">Website</a>
+                            </li>
+                            <li>
+                                <strong>Rexburg Police Department</strong>
+                                <br>
+                                25 East Main Street
+                                <br>
+                                Rexburg, ID 83440
+                                <br>
+                                <a href="https://maps.app.goo.gl/e5qAC7DSbeuJfiiX7" target="_blank">Google Maps</a>
+                                <br>
+                                <a href="tel:+12083593000" target="_blank">Phone</a>
+                                <br>
+                                <a href="https://www.rexburg.org/police">Website</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>            
@@ -263,7 +504,7 @@
                 <source srcset="images/tetonlakesgolfcourse_small.webp" media="(max-width: 500px)">
                 <source srcset="images/tetonlakesgolfcourse_medium.webp" media="(max-width: 1000px)">
                 <img src="images/tetonlakesgolfcourse_large.webp" alt="Teton Lakes Golf Course" loading="lazy">
-                <p><strong>Teton Lakes Golf Course: Rexburg's Scenic Fairways</strong>With its lush greens, challenging holes, and breathtaking views of the Teton Range, this golf course offers both a serene escape and an exhilarating challenge for golfers of all skill levels.</p>
+                <p><strong>Teton Lakes Golf Course: Rexburg's Scenic Fairways</strong><br>With its lush greens, challenging holes, and breathtaking views of the Teton Range, this golf course offers both a serene escape and an exhilarating challenge for golfers of all skill levels.</p>
             </picture>
         </section>
     </main>    

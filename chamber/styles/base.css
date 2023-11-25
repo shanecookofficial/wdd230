@@ -299,18 +299,15 @@ box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
 
 .info-title {
     cursor: pointer;
-    /* Additional styling */
 }
 
 .info-title .toggle-indicator {
-    /* Style for the toggle indicator */
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
 .info-content {
     display: none;
-    /* Additional styling for the content */
 }
 
 .info-content ul {
@@ -325,4 +322,20 @@ box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
     border: 1px solid #333;
     padding: 10px;
     margin: 0;
+}
+
+#discover-content aside section li {
+    padding: 3%;
+}
+
+#emergency {
+    color: red;
+    border: solid red  1px;
+    padding: 5%;
+    font-size: 5vw;
+}
+
+#visitMessage {
+    font-size: 5vw;
+    text-align: center;
 }
