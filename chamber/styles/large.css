@@ -192,4 +192,24 @@
     .photo-gallery h2 {
         margin-bottom: 5%;
     }
+
+    #join-content h2{
+        font-size: 4vw;
+    }
+
+    #join-content input {
+        font-size: 2vw;
+    }
+
+    #join-content form label{
+        font-size: 3vw;
+    }
+
+    #membership-benefits h3 {
+        font-size: 2vw;
+    }
+
+    #membership-benefits li {
+        font-size: 1.25vw;
+    }
 }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shane Cook's WDD 230 Chamber of Commerce Project Join Page">
+    <meta name="author" content="Shane Cook">
+    <meta property="og:url" content="https://shanecookofficial.github.io/wdd230/chamber/index.html" />
+    <meta property="og:title" content="Rexburg Chamber of Commerce Join Page(not official)" />
+    <meta property="og:image" content="https://images.discerningassets.com/image/upload/c_fit,h_1000,w_1000/c_fit,fl_relative,h_1.0,o_100,w_1.0/v1610732350/Rexburg_Idaho_Temple_-_Field_Sunset_Scott_Jarvie_web_k6rvsc.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Join | Rexburg Chamber of Commerce</title>
+    <script src="../scripts/hamburger.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="../chamber/scripts/darkmode.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-container shadow-dark">
+        <img id="theme-icon"    src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="ERR">
+    </div>
+    <header>
+        <div id="banner">
+            <img id="logo" src="images/RXB_Chamber_Logo_White.png" alt="logo">
+            <div id="banner-title">
+                <h1>Rexburg<br>Chamber of Commerce</h1>
+            </div>
+            <button id="hamburger-button">&#8801;</button>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="./index.html" title="Home">Home</a></li>
+                <li><a href="./discover.html" title="Discover">Discover</a></li>
+                <li><a href="#" title="Directory">Directory</a></li>
+                <li><a href="./join.html" title="Join" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="join-content">
+        <form action="thankyou.html" method="get">
+            <label for="firstName">First Name: <input type="text" name="firstName" id="firstName" required></label><br>
+            <label for="lastName">Last Name: <input type="text" name="lastName" id="lastName" required></label><br>
+            <label for="title">Title/Position: <input type="text" name="title" id="title" required pattern="[A-Za-z-\s]{7,}"></label><br>
+            <label for="email">Email: <input type="email" name="email" id="email" required placeholder="example@email.com"></label><br>
+            <label for="phone">Mobile Phone: <input type="tel" name="phone" id="phone" required></label><br>
+            <label for="orgName">Organization Name: <input type="text" name="orgName" id="orgName" required></label><br>
+            <label for="membership">Membership Level:
+                <select name="membership" id="membership">
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label><br>
+            <label for="description">Organization Description:<br>
+                <textarea name="description" id="description"></textarea>
+            </label><br>
+            <input type="submit" value="Join Now">
+        </form>
+        <div id="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <div class="membership-level">
+                <h3>NP Membership (Non-Profit)</h3>
+                <ul>
+                    <li>No membership fee</li>
+                    <li>Access to monthly networking events</li>
+                    <li>Basic listing in the online directory</li>
+                </ul>
+            </div>
+            <div class="membership-level">
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>Annual fee: $100</li>
+                    <li>Includes NP benefits</li>
+                    <li>Access to specialized training sessions</li>
+                    <li>Spotlight feature in the monthly newsletter</li>
+                </ul>
+            </div>
+            <div class="membership-level">
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>Annual fee: $250</li>
+                    <li>Includes Bronze benefits</li>
+                    <li>Discounts on event sponsorships</li>
+                    <li>Priority access to chamber events</li>
+                    <li>Enhanced listing in the online directory</li>
+                </ul>
+            </div>
+            <div class="membership-level">
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>Annual fee: $500</li>
+                    <li>Includes Silver benefits</li>
+                    <li>Free advertising space on the chamber website</li>
+                    <li>Exclusive invitations to VIP events</li>
+                    <li>Opportunity to host events or workshops</li>
+                </ul>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div id="top-footer">
+            <img src="images/RXB_Chamber_Logo_White.png" alt="logo">
+            <div id="title-info">
+                <h2>
+                    Rexburg<br>
+                    Chamber of Commerce
+                </h2>
+                <p>
+                    167 W Main St #2,<br>
+                    Rexburg, ID 83440
+                </p>
+            </div>
+        </div>
+        <div id="middle-footer">
+            <p>
+                rexburg@chamber.org<br>
+                <a href="tel:2083565700">208-356-5700</a><br>
+                &#128205; Location Map
+            </p>
+            <div id="social-media-container">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook-logo-white.png" alt="Facebook logo">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="images/x-logo-white.png" alt="X logo">
+                </a>
+            </div>
+        </div>    
+        <div id="bottom-footer">
+            <hr>
+            <div id="site-detail-container">
+                <p>&copy;<span id="year"></span> Rexburg Chamber</p>
+                <p>Shane Cook</p>
+                <p>WDD 230 Project</p>
+                <p> Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -348,3 +348,69 @@ box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
 #discover-content a:hover {
     color: var(--accent-color);
 }
+
+#join-content {
+    display: grid;
+    margin: 5%;
+    align-items: center;
+    justify-items: center;
+}
+
+#join-content h2{
+    font-size: 10vw;
+    padding: 5%;
+    margin: 0;
+    margin-bottom: 5%;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    display: block;
+    width: 90%;
+}
+
+form {
+    background-color: var(--secondary-color);
+    padding: 5%;
+    border-radius: 15px;
+}
+
+form label {
+    font-size: 5.5vw;
+}
+
+#membership option {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#membership option[value="bronze"] {
+    background-color: #cd7f32;
+    color: white;
+}
+
+#membership option[value="silver"] {
+    background-color: silver;
+    color: white;
+}
+
+#membership option[value="gold"] {
+    background-color: gold;
+    color: black;
+}
+
+#membership-benefits {
+    background-color: var(--secondary-color);
+    padding: 10%;
+    border-radius: 15px;
+    margin-top: 5%;
+}
+
+.thank-you-section {
+    grid-column: 2/3;
+    padding: 5%;
+    text-align: center;
+}
+
+.thank-you-section a {
+    color: var(--accent-color2);
+    text-decoration: none;
+}
