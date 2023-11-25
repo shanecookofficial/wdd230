@@ -339,3 +339,12 @@ box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
     font-size: 5vw;
     text-align: center;
 }
+
+#discover-content a {
+    color: var(--accent-color2);
+    text-decoration: none;
+}
+
+#discover-content a:hover {
+    color: var(--accent-color);
+}
