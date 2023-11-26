@@ -414,3 +414,34 @@ form label {
     color: var(--accent-color2);
     text-decoration: none;
 }
+
+#main-heading {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#main-heading h2 {
+    color: var(--text-on-dark);
+    text-align: center;
+    grid-column: 1/4;
+}
+
+#toggleView {
+    color: var(--text-on-dark);
+    border: none;
+    background-color: transparent;
+    display: none;
+    grid-column: 4/5;
+}
+
+.member-card-list img{
+    max-width: 100%;
+}
+
+.member-card-grid {
+    max-width: 100%;
+}
+
+.member-card-grid img {
+    max-width: 100%;
+}

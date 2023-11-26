@@ -104,4 +104,34 @@
     #membership-benefits h2 {
         font-size: 5vw;
     }
+
+    #toggleView {
+        display: block;
+    }
+
+    #directory {
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    #main-heading {
+        grid-row: 1/2;
+    }
+
+    #members {
+        grid-row: 2/3;
+    }
+
+    .grid-view {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .member-card-grid{
+        max-width: 80%;
+    }
+
+    .member-card-grid img {
+        max-width: 80%;
+    }
 }
