@@ -218,6 +218,14 @@
     }
 
     #main-heading {
+        grid-column: 1/2;
+    }
+
+    #members {
+        grid-column: 1/2;
+    }
+
+    #main-heading {
         grid-template-columns: repeat(5, 1fr);
     }
 
@@ -233,5 +241,5 @@
     .grid-view {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
 }
