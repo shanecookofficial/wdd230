@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h3 class="member-name">${member.name}</h3>
                     <p class="member-address">${member.address}</p>
                     <p class="member-phone">${member.phone_number}</p>
-                    <a href="${member.website_url}" class="member-website">Website</a>
+                    <a href="${member.website_url}" class="member-website">${member.website_url}</a>
                     <p class="member-level">${member.membership_level}</p>
                 </div>
             `;

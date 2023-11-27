@@ -16,6 +16,7 @@
     <script src="../chamber/scripts/darkmode.js" defer></script>
     <script src="../chamber/scripts/weather.js" defer></script>
     <script src="../chamber/scripts/banner.js" defer></script>
+    <script src="../chamber/scripts/member-spotlights.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
@@ -46,11 +47,10 @@
         </nav>
         <div id="hero">
             <picture>
-                <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
-                <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">
-                <img src="images/wdd230-org-large.webp" alt="Example Image">
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/teton.jpg" alt="hero image">
             </picture>
-            <!--<img src="images/teton.jpg" alt="hero image">-->
             <a href="#">Join the Chamber</a>
         </div>
     </header>
@@ -58,12 +58,13 @@
         <section id="events">
             <h2>Events</h2>
             <hr>
-            <h3>Event Name <span>- Event Owner</span></h3>
+            <h3>Rexburg Farmers Market <span>- Local Farmers Cooperative</span></h3>
             <p>
-                Info about the event
+                Discover fresh, locally grown produce, homemade goods, and artisanal products at the Rexburg Farmers Market. Support local farmers and enjoy the best of our agricultural community. From fresh fruits and vegetables to handcrafted items, there's something for everyone. Don't miss the opportunity to connect with local producers and discover the richness of Rexburg's local produce.
             </p>
-            <a href="#">more info ...</a>
+            <a href="link-to-farmers-market-details.html">more info ...</a>
         </section>
+        
         <section id="weather">
             <h2>Weather</h2>
             <hr>
@@ -95,28 +96,22 @@
                 </div>
             </div>
         </section>
+        <h2 id="spotlights-header">Rexburg Chamber of Commerce Member Spotlights</h2>
         <div id="member-spotlights">
-            <h2>Rexburg Chamber of Commerce Member Spotlights</h2>
             <section class="spotlight">
-                <h2>Title</h2>
-                <p>Quote</p>
-                <a href="mailto:email@email.com">email@email.com</a>
+                <img src="#" alt="placeholder">
                 <a href="tel:1234567890">123-456-7890</a>
-                <a href="#">Website</a>
+                <a target="_blank" href="#">Website</a>
             </section>
             <section class="spotlight">
-                <h2>Title</h2>
-                <p>Quote</p>
-                <a href="mailto:email@email.com">email@email.com</a>
+                <img src="#" alt="placeholder">
                 <a href="tel:1234567890">123-456-7890</a>
-                <a href="#">Website</a>
+                <a target="_blank" href="#">Website</a>
             </section>
             <section class="spotlight">
-                <h2>Title</h2>
-                <p>Quote</p>
-                <a href="mailto:email@email.com">email@email.com</a>
+                <img src="#" alt="placeholder">
                 <a href="tel:1234567890">123-456-7890</a>
-                <a href="#">Website</a>
+                <a target="_blank" href="#">Website</a>
             </section>
         </div>
     </main>
@@ -136,7 +131,7 @@
         </div>
         <div id="middle-footer">
             <p>
-                rexburg@chamber.org<br>
+                chamber@rexburg.org<br>
                 <a href="tel:2083565700">208-356-5700</a><br>
                 &#128205; Location Map
             </p>
