@@ -14,7 +14,8 @@
     <script src="../scripts/hamburger.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
     <script src="../chamber/scripts/darkmode.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="../chamber/scripts/weather.js" defer></script>
+    <script src="../chamber/scripts/banner.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
@@ -40,6 +41,10 @@
                 <li><a href="./join.html" title="Join">Join</a></li>
             </ul>
         </nav>
+        <div id="meet-greet-banner">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.</p>
+            <button id="banner-close-button">❌</button>
+        </div>
         <div id="hero">
             <picture>
                 <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
@@ -79,8 +84,16 @@
                     <tr>
                         <td>Wind Chill: </td>
                         <td id="wind-chill"></td>
-                    </tr>                    
+                    </tr>
                 </table>
+            </div>
+            <div id="forecast-container">
+                <h3>3-Day Forecast</h3>
+                <div id="forecasts">
+                    <div id="forecast-day-1" class="forecast-day"></div>
+                    <div id="forecast-day-2" class="forecast-day"></div>
+                    <div id="forecast-day-3" class="forecast-day"></div>
+                </div>
             </div>
         </section>
         <div id="member-spotlights">
