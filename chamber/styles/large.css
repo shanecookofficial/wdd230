@@ -218,11 +218,11 @@
     }
 
     #main-heading {
-        grid-column: 1/2;
+        grid-column: 1/4;
     }
 
     #members {
-        grid-column: 1/2;
+        grid-column: 1/4;
     }
 
     #main-heading {
