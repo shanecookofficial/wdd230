@@ -1,0 +1,88 @@
+:root {
+    --header-font:'EB Garamond', serif;
+    --other-font:'Montserrat', sans-serif;
+    --background-color:#fefdf3;
+    --font-color:#3c2304;
+}
+
+* {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: var(--other-font);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+}
+
+header a {
+    align-self: center;
+    justify-content: center;
+}
+
+header a img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+}
+
+header h1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 8.5vw;
+    font-family: var(--header-font);
+    margin-top: 5%;
+}
+
+#menu {
+	font-size: 2.5rem;
+    border: none;
+	background-color: #fefdf3;
+ 	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "x";
+}
+
+nav {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.navigation {
+	list-style: none;
+    padding: 0;
+    margin: 0 5% 0 0;
+}
+
+.navigation li {
+	display: none;
+    padding: 3%;
+}
+
+.navigation li a {
+	text-align: center;
+	text-decoration: none;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+    text-align: center;
+}

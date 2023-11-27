@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bountiful Foods - Fresh Organic Produce & Specialty Fruit Drinks</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
     <!-- Add your CSS file link here -->
+    <script src="scripts/hamburger.js" defer></script>
     <!-- Add your JavaScript file link here -->
 </head>
 <body>
     <header>
+        <a href="/index.html"><img src="images/bf-optimized-logo.png"></a>
+        <h1>Bountiful Foods</h1>
         <nav>
-            <!-- Navigation links here -->
-            <a href="#">Home</a>
-            <a href="#">Order</a>
-            <a href="#">About Us</a>
-            <!-- Add more links as needed -->
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#" title="Home" class="active">Home</a></li>
+                <li><a href="#" title="Order">Order</a></li>
+                <li><a href="#" title="About Us">About Us</a></li>
+            </ul>
         </nav>
         <div class="contact-info">
             <!-- Business contact information -->
