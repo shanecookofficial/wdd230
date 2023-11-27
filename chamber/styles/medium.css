@@ -127,6 +127,11 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .grid-view a, .list-view a {
+        color: red;
+        text-decoration: none;
+    }
+
     .member-card-grid{
         max-width: 80%;
     }
@@ -134,4 +139,5 @@
     .member-card-grid img {
         max-width: 80%;
     }
+
 }
