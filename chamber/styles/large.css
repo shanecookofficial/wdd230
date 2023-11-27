@@ -242,4 +242,11 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    #meet-greet-banner {
+        margin: 2%;
+    }
+
+    #meet-greet-banner p {
+        font-size: 2vw;
+    }
 }

@@ -475,8 +475,10 @@ form label {
     grid-template-columns: 1fr 1fr;
 }
 
-#meet-greet-banner p {
-    grid-column: 1/2;
+#meet-greet-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
 }
 
 #meet-greet-banner button{

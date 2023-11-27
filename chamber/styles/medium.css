@@ -140,4 +140,8 @@
         max-width: 80%;
     }
 
+    #meet-greet-banner p {
+        font-size: 4vw;
+    }
+
 }

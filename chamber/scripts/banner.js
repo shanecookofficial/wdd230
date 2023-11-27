@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Function to check if today is between Sunday and Wednesday
+    // Function to check if today is between Monday and Wednesday
     function shouldShowBanner() {
         const today = new Date().getDay();
-        // Sunday = 0, Monday = 1, Tuesday = 2, Wednesday = 3
-        return today >= 0 && today <= 3;
+        // Monday = 1, Tuesday = 2, Wednesday = 3
+        return today >= 1 && today <= 3;
     }
 
     // Select the meet and greet banner
