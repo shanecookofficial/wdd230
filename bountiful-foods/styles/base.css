@@ -42,8 +42,8 @@ header h1 {
     border: none;
 	background-color: #fefdf3;
  	position: absolute;
-	top: 1.5rem;
-	right: 1.5rem;
+	top: 1.25rem;
+	right: 1rem;
     grid-column: 3/4;
     grid-row: 1/2;
 }
@@ -85,4 +85,19 @@ nav {
 .open li a {
 	display: block;
     text-align: center;
+}
+
+.hero {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.hero picture {
+    grid-row: 1/4;
+    z-index: 0;
+}
+
+.hero a {
+    grid-row: 2/3;
+    z-index: 1;
 }
