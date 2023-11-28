@@ -99,7 +99,7 @@ nav {
     grid-column: 1/4;
     grid-row: 1/4;
     z-index: 0;
-    width: 100%; /* To ensure the image covers the full area */
+    max-width: 100%; /* To ensure the image covers the full area */
 }
 
 .hero a {
