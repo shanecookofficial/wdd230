@@ -216,3 +216,17 @@ nav {
     margin: 2%;
     font-size: 3vw;
 }
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#social-media-links  {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+}
