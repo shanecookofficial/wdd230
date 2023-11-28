@@ -89,15 +89,41 @@ nav {
 
 .hero {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
 }
 
 .hero picture {
+    grid-column: 1/4;
     grid-row: 1/4;
     z-index: 0;
+    width: 100%; /* To ensure the image covers the full area */
 }
 
 .hero a {
+    grid-column: 1/4;
     grid-row: 2/3;
     z-index: 1;
+    align-self: center;
+    justify-self: center;
+    background-color: var(--background-color);
+    padding: 5%;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 5vw;
+}
+
+#intro {
+    padding: 5%;
+    text-align: center;
+}
+
+.about-coastal-area {
+    text-align: center;
+}
+
+.about-coastal-area p{
+    padding: 5%;
 }
