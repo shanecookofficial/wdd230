@@ -121,6 +121,28 @@ nav {
 #intro {
     padding: 5%;
     text-align: center;
+    margin-top: 0;
+}
+
+.specialty-drinks-counter {
+    background-color: var(--font-color);
+    padding: 5%;
+    border-radius: 15px;
+    text-align: center;
+    margin: 5%;
+}
+
+.specialty-drinks-counter h2 {
+    background-color: var(--font-color);
+    color: var(--background-color);
+    margin-top: 0;
+}
+
+.specialty-drinks-counter p {
+    background-color: var(--font-color);
+    color: var(--background-color);
+    font-size: 10vw;
+    margin: 0;
 }
 
 .about-coastal-area {
@@ -133,8 +155,6 @@ nav {
 
 .about-coastal-area p{
     padding: 5%;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .weather-card {
