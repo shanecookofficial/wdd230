@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <!-- Add your CSS file link here -->
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather-card.js" defer></script>
     <!-- Add your JavaScript file link here -->
 </head>
 <body>
@@ -51,10 +52,36 @@
             <p>Carlsbad State Beach, located in Southern California, is a popular destination known for its golden sands and scenic ocean views. <br><br>It offers a range of activities such as swimming, surfing, and sunbathing, along with convenient amenities for visitors. This beach is ideal for family outings or simply enjoying the coastal ambiance of Carlsbad.</p>
         </section>
         <section class="weather-card">
-            <!-- Weather card placeholder -->
-            <div id="weather-info">
-                <!-- Dynamic content will be loaded here -->
+            <h2>Carlsbad Weather</h2>
+            <div id="current-weather">
+                <img id="current-weather-icon" src="#" alt="sunny icon">
+                <p id="current-weather-condition-description">Sunny</p>
+                <p id="humidity"><span>53</span>% Humidity</p>
+                <p id="current-temperature"><span>47</span>°F</p>
+                <p id="todays-temperature-range"><span id="todays-high">54</span>°F / <span id="todays-low">35</span>°F</p>
             </div>
+            <h3>Three Day Forecast</h3>
+            <div id="three-day-forecast">
+                <div class="day-forecast-container">
+                    <p id="forecast-day-1">Mon</p>
+                    <img src="#" alt="day-weather-icon" class="day-weather-icon" id="day-weather-icon-1">
+                    <p><span class="day-high" id="day-high-1">54</span>°F</p>
+                    <p><span class="day-low" id="day-low-1">35</span>°F</p>
+                </div>
+                <div class="day-forecast-container">
+                    <p id="forecast-day-2">Tue</p>
+                    <img src="#" alt="day-weather-icon" class="day-weather-icon" id="day-weather-icon-2">
+                    <p><span class="day-high" id="day-high-2">58</span>°F</p>
+                    <p><span class="day-low" id="day-low-2">44</span>°F</p>
+                </div>
+                <div class="day-forecast-container">
+                    <p id="forecast-day-3">Wed</p>
+                    <img src="#" alt="day-weather-icon" class="day-weather-icon" id="day-weather-icon-3">
+                    <p><span class="day-high" id="day-high-3">58</span>°F</p>
+                    <p><span class="day-low" id="day-low-3">53</span>°F</p>
+                </div>
+            </div>
+            
         </section>
         <section class="specialty-drinks-counter">
             <!-- Placeholder for drink submission counter -->
