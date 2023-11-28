@@ -25,23 +25,42 @@ function updateThreeDayForecast(data) {
         return;
     }
 
-    for (let i = 0; i < 3; i++) {
-        const forecast = data.list[i * 8]; // 8 intervals of 3 hours = 24 hours
-        const date = new Date(forecast.dt * 1000);
-        const dayName = date.toLocaleDateString('en-US', { weekday: 'short' });
-        let iconCode = forecast.weather[0].icon;
+    // Process each day starting from tomorrow
+    for (let day = 1; day <= 3; day++) {
+        // Calculate the start index for each day (skip today's forecast)
+        const startIndex = 8 * day;
+        const endIndex = startIndex + 8;
+        let dayMaxTemp = -Infinity;
+        let dayMinTemp = Infinity;
+        let iconCode;
+        let dayName;
 
-        // Ensure the icon is for daytime
-        if (iconCode.endsWith('n')) {
-            iconCode = iconCode.replace('n', 'd');
+        for (let i = startIndex; i < endIndex; i++) {
+            const forecast = data.list[i];
+            dayMaxTemp = Math.max(dayMaxTemp, forecast.main.temp_max);
+            dayMinTemp = Math.min(dayMinTemp, forecast.main.temp_min);
+
+            // Use the first interval's date and weather icon as a representation for the day
+            if (i === startIndex) {
+                const date = new Date(forecast.dt * 1000);
+                dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
+                iconCode = forecast.weather[0].icon;
+                
+                // Ensure the icon is for daytime
+                if (iconCode.endsWith('n')) {
+                    iconCode = iconCode.replace('n', 'd');
+                }
+            }
         }
 
-        document.getElementById(`forecast-day-${i+1}`).textContent = dayName;
-        document.getElementById(`day-weather-icon-${i+1}`).src = `http://openweathermap.org/img/w/${iconCode}.png`;
-        document.getElementById(`day-high-${i+1}`).textContent = Math.round(forecast.main.temp_max);
-        document.getElementById(`day-low-${i+1}`).textContent = Math.round(forecast.main.temp_min);
+        document.getElementById(`forecast-day-${day}`).textContent = dayName;
+        document.getElementById(`day-weather-icon-${day}`).src = `http://openweathermap.org/img/w/${iconCode}.png`;
+        document.getElementById(`day-high-${day}`).textContent = Math.round(dayMaxTemp);
+        document.getElementById(`day-low-${day}`).textContent = Math.round(dayMinTemp);
     }
 }
+
+
 
 
 // Fetch current weather data

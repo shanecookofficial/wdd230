@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods - Fresh Organic Produce & Specialty Fruit Drinks</title>
+    <title>Home | Bountiful Foods</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
     <!-- Add your CSS file link here -->
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/weather-card.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
     <!-- Add your JavaScript file link here -->
 </head>
 <body>
@@ -28,7 +29,7 @@
             </ul>
         </nav>
         <div class="contact-info">
-            <!-- Business contact information -->
+            
         </div>
     </header>
     <main>
@@ -90,10 +91,42 @@
             </div>
         </section>
     </main>
-
     <footer>
+        <a>Contact Us</a>
+        <a>Resources</a>
+        <a>Home</a>
+        <a>Order</a>
+        <a>About Us</a>
+        <hr>
+        <p>&copy; <span id="year"></span> Bountiful Foods</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <div id="social-media-links">
+            <a target="_blank" href="https://www.facebook.com/">
+                <picture>
+                    <source srcset="images/Facebook_Logo_Primary-small.webp" media="(max-width: 500px)">
+                    <img src="images/Facebook_Logo_Primary.webp" alt="Facebook Logo" loading="lazy">
+                </picture> <!--https://about.meta.com/brand/resources/facebookapp/logo/-->
+            </a>
+            <a href="https://www.instagram.com/">
+                <picture>
+                    <source srcset="images/Instagram_Glyph_Gradient-small.webp" media="(max-width: 500px)">
+                    <img src="images/Instagram_Glyph_Gradient.webp" alt="Instagram Logo" loading="lazy">
+                </picture> <!--https://about.meta.com/brand/resources/instagram/instagram-brand/-->
+            </a>
+            <a href="https://twitter.com/?lang=en">
+                <picture>
+                    <source srcset="images/x-logo-black-small.webp" media="(max-width: 500px)">
+                    <img src="images/x-logo-black.webp" alt="X Logo" loading="lazy">
+                </picture> <!--https://about.twitter.com/en/who-we-are/brand-toolkit-->
+            </a>
+            <a href="https://www.tiktok.com/en/">
+                <picture>
+                    <source srcset="images/TikTok_Icon_Black_Circle-small.webp" media="(max-width: 500px)">
+                    <img src="images/TikTok_Icon_Black_Circle.webp" alt="X Logo" loading="lazy">
+                </picture> <!--https://about.twitter.com/en/who-we-are/brand-toolkit-->
+            </a>
+        </div>
         <!-- Footer content -->
-        <!-- Links to social media -->
     </footer>
 </body>
 </html>

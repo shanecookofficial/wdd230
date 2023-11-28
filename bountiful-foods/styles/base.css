@@ -154,7 +154,6 @@ nav {
 .weather-card h2 {
     grid-row: 1/2;
     text-align: center;
-    margin-bottom: 0;
     font-family: var(--other-font);
 }
 
