@@ -1,0 +1,121 @@
+:root {
+    --header-font:'EB Garamond', serif;
+    --other-font:'Montserrat', sans-serif;
+    --background-color:#fefdf3;
+    --font-color:#3c2304;
+}
+
+header {
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 1fr;
+}
+
+header img {
+    max-width: 65%;
+    grid-column: 1/2;
+}
+
+header h1 {
+    font-size: 4vw;
+    grid-column: 2/3;
+    text-align: left;
+}
+
+header nav {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+header button {
+    display: none;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+}
+
+.navigation li {
+    display: block;
+}
+
+.navigation li a {
+    font-size: 1.75vw;
+    padding: 5%;
+}
+
+.navigation li a:hover {
+    background-color: var(--font-color);
+    color: var(--background-color);
+    border-radius: 15px;
+    padding: 5%;
+}
+
+.hero {
+    grid-template-rows: auto auto auto;
+}
+
+.hero a {
+    font-size: 2.5vw;
+    padding: 3%;
+}
+
+.hero a:hover {
+    opacity: 75%;
+}
+
+#intro {
+    font-size: 2vw;
+    padding: 3%;
+}
+
+.weather-card {
+    margin: 0 15% 0 15%;
+    padding: 2%;
+}
+
+.weather-card h2 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+#current-weather-icon {
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+#current-weather-condition-description, #current-temperature {
+    font-size: 2vw;
+}
+
+#current-weather-condition-description {
+    text-align: center;
+}
+
+#humidity {
+    font-size: 1.75vw;
+    text-align: center;
+}
+
+#current-temperature {
+    align-self:last baseline;
+}
+
+#todays-temperature-range{
+    font-size: 1.25vw;
+}
+
+#three-day-forecast p {
+    font-size: 1.5vw;
+}
+
+.weather-card h3 {
+    margin: 0;
+}
+
+.specialty-drinks-counter {
+    margin: 0 15% 0 15%;
+    padding: 2%;
+}
