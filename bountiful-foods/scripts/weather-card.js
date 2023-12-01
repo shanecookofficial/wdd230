@@ -16,7 +16,7 @@ function updateWeatherCard(data) {
     document.getElementById('current-weather-condition-description').textContent = data.weather[0].main;
     document.getElementById('humidity').innerHTML = `<span>${data.main.humidity}</span>% Humidity`;
     document.getElementById('current-temperature').innerHTML = `<span>${Math.round(data.main.temp)}</span>°F`;
-    document.getElementById('todays-temperature-range').innerHTML = `<span id="todays-high">${Math.round(data.main.temp_max)}</span>°F / <span id="todays-low">${Math.round(data.main.temp_min)}</span>°F`;
+    document.getElementById('todays-temperature-range').textContent = `${Math.round(data.main.temp_min)}°F / ${Math.round(data.main.temp_max)}°F`;
 }
 
 function updateThreeDayForecast(data) {
@@ -25,42 +25,49 @@ function updateThreeDayForecast(data) {
         return;
     }
 
-    // Process each day starting from tomorrow
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Set today's date to midnight
+
+    const forecasts = [];
+
     for (let day = 1; day <= 3; day++) {
-        // Calculate the start index for each day (skip today's forecast)
-        const startIndex = 8 * day;
-        const endIndex = startIndex + 8;
-        let dayMaxTemp = -Infinity;
-        let dayMinTemp = Infinity;
-        let iconCode;
-        let dayName;
+        const targetDate = new Date(today);
+        targetDate.setDate(today.getDate() + day);
 
-        for (let i = startIndex; i < endIndex; i++) {
-            const forecast = data.list[i];
-            dayMaxTemp = Math.max(dayMaxTemp, forecast.main.temp_max);
-            dayMinTemp = Math.min(dayMinTemp, forecast.main.temp_min);
+        // Find the forecast closest to 9 AM for each day
+        let closestForecast = null;
+        let minimumTimeDifference = Number.MAX_VALUE;
 
-            // Use the first interval's date and weather icon as a representation for the day
-            if (i === startIndex) {
-                const date = new Date(forecast.dt * 1000);
-                dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
-                iconCode = forecast.weather[0].icon;
-                
-                // Ensure the icon is for daytime
-                if (iconCode.endsWith('n')) {
-                    iconCode = iconCode.replace('n', 'd');
+        for (const forecast of data.list) {
+            const forecastDate = new Date(forecast.dt * 1000);
+
+            if (forecastDate.getDate() === targetDate.getDate() && forecastDate.getMonth() === targetDate.getMonth() && forecastDate.getFullYear() === targetDate.getFullYear()) {
+                const timeDifference = Math.abs(forecastDate.getHours() - 9);
+                if (timeDifference < minimumTimeDifference) {
+                    minimumTimeDifference = timeDifference;
+                    closestForecast = forecast;
                 }
             }
         }
 
-        document.getElementById(`forecast-day-${day}`).textContent = dayName;
-        document.getElementById(`day-weather-icon-${day}`).src = `http://openweathermap.org/img/w/${iconCode}.png`;
-        document.getElementById(`day-high-${day}`).textContent = Math.round(dayMaxTemp);
-        document.getElementById(`day-low-${day}`).textContent = Math.round(dayMinTemp);
+        if (closestForecast) {
+            forecasts.push(closestForecast);
+        }
     }
+
+    // Update HTML elements
+    if (forecasts.length < 3) {
+        console.error('Not enough forecast data for 3 days.');
+        return;
+    }
+
+    forecasts.forEach((forecast, index) => {
+        const dayName = new Date(forecast.dt * 1000).toLocaleDateString('en-US', { weekday: 'short' });
+        document.getElementById(`forecast-day-${index + 1}`).textContent = dayName;
+        document.getElementById(`day-weather-icon-${index + 1}`).src = `http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`;
+        document.getElementById(`day-${index + 1}-temp`).textContent = Math.round(forecast.main.temp);
+    });
 }
-
-
 
 
 // Fetch current weather data
