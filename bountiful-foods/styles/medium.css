@@ -1,0 +1,122 @@
+@media (min-width: 768px) {
+    header {
+        grid-template-columns: 1fr 3fr 1fr;
+
+    }
+
+    header h1 {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    #menu {
+        top: .75em;
+        right: .75em;
+        font-size: 7vw;
+    }
+
+    nav a {
+        font-size: 4vw;
+    }
+
+    #home-main {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .hero {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #intro {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        padding: 1%;
+        font-size: 3.25vw;
+        margin: 0;
+    }
+
+    .weather-card {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .weather-card h2 {
+        font-size: 4vw;
+    }
+
+    #current-weather-condition-description, #current-temperature {
+        font-size: 2.5vw;
+    }
+
+    #humidity {
+        font-size: 2.25vw;
+    }
+
+    #current-temperature {
+        align-self: center;
+    }
+
+    #todays-temperature-range{
+        font-size: 1.60vw;
+    }
+
+    .specialty-drinks-counter {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-coastal-area {
+        grid-column: 1/3;
+    }
+
+    .about-coastal-area h2 {
+        font-size: 4.5vw;
+    }
+
+    .about-coastal-area p {
+        font-size: 3vw;
+    }
+
+    footer p {
+        font-size: 2.5vw;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer p:nth-of-type(1){
+        grid-row: 1/2;
+        margin: 2%;
+        grid-column: 1/3;
+    }
+
+    footer p:nth-of-type(1) a {
+        padding: 1%;
+    }
+
+    footer p:nth-of-type(2) {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    footer p:nth-of-type(3) {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    #social-media-links {
+        padding: 1%;
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+}
