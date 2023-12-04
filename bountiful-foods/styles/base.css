@@ -153,8 +153,8 @@ nav {
     max-width: 100%;
 }
 
-.about-coastal-area p{
-    padding: 5%;
+.about-coastal-area p:nth-of-type(1){
+    margin-bottom: 0;
 }
 
 .weather-card {
