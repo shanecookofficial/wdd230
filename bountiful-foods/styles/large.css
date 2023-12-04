@@ -46,13 +46,6 @@
         padding: 5%;
     }
     
-    .navigation li a:hover {
-        background-color: var(--font-color);
-        color: var(--background-color);
-        border-radius: 15px;
-        padding: 5%;
-    }
-    
     .hero {
         grid-template-rows: auto auto auto;
     }
@@ -146,10 +139,28 @@
         margin-bottom: 5%;
     }
 
-    footer p:nth-of-type(1) a:hover {
-        background-color: var(--font-color);
-        color: var(--background-color);
-        border-radius: 15px;
-        padding: 1%;
+    .animated-underline-hover:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: var(--font-color);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .animated-underline-hover:hover:after { 
+    width: 100%; 
+    left: 0; 
+    }
+
+    .animated-underline-hover {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
     }
 }
