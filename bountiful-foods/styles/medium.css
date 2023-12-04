@@ -119,4 +119,8 @@
         grid-row: 3/4;
         grid-column: 1/3;
     }
+
+    #aboutus-main p {
+        font-size: 3vw;
+    }
 }

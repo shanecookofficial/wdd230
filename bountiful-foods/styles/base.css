@@ -250,3 +250,22 @@ footer a {
     justify-content: space-around;
     padding: 3%;
 }
+
+#aboutus-main h2 {
+    font-size: 8vw;
+    margin: 5%;
+}
+
+#aboutus-main p {
+    margin: 5%;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+.animated-underline-hover.active:after {
+    width: 100%; 
+    left: 0; 
+}
