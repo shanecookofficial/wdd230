@@ -25,6 +25,7 @@
     <!-- JavaScript Files -->
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/fruits.js" defer></script>
     <!-- JavaScript Files -->
 </head>
 <body>
@@ -41,46 +42,29 @@
         </nav>
     </header>
     <main id="order-main">
-        <h2>Order</h2>
+        <section id="order-hero">
+            <h2>Order</h2>
+            <picture>
+                <source srcset="images/order-hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/order-hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/order-hero-optimized.webp" alt="Smoothies" loading="lazy">
+            </picture> <!--https://www.usatoday.com/gcdn/-mm-/6e8980f94a4c041cf4d2f36bd159bb7b2c14fbdd/c=0-863-4493-3401/local/-/media/2017/06/29/USATODAY/USATODAY/636343393406681509-GettyImages-527673038.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp-->
+        </section>
         <form>
-            <div id="fruit-selection">
-                <select id="fruit1" name="fruit1">
-                    <option value="">Please select a fruit</option>
-                </select>
+            <label for="fruit1">Fruit #1:</label>
+            <select name="fruit1" id="fruit1">
+            </select>
+            <br><br>
         
-                <select id="fruit2" name="fruit2">
-                    <option value="">Please select a fruit</option>
-                </select>
+            <label for="fruit2">Fruit #2:</label>
+            <select name="fruit2" id="fruit2">
+            </select>
+            <br><br>
         
-                <select id="fruit3" name="fruit3">
-                    <option value="">Please select a fruit</option>
-                </select>
-            </div>
-        
-            <div id="nutrition-info">
-                <p>Total Carbs: <span id="total-carbs"></span></p>
-                <p>Total Protein: <span id="total-protein"></span></p>
-                <p>Total Fat: <span id="total-fat"></span></p>
-                <p>Total Sugar <span id="total-sugar"></span></p>
-                <p>Total Calories <span id="total-calories"></span></p>
-            </div>
-        
-            <div id="submission-info">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name">
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@example.com">
-        
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" placeholder="208-123-4567">
-        
-                <label for="special-instructions">Special Instructions:</label>
-                <textarea id="special-instructions" name="special-instructions" placeholder="Special instructions"></textarea>
-            </div>
-            <button>Submit</button>
+            <label for="fruit3">Fruit #3:</label>
+            <select name="fruit3" id="fruit3">
+            </select>
         </form>
-        
     </main>
     <hr>
     <footer>
