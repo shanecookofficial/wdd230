@@ -13,7 +13,7 @@
 
 header {
     display: grid;
-    grid-template-columns: 1fr 3fr auto;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: auto auto;
     align-items: center;
 }
@@ -34,7 +34,7 @@ header h1 {
     grid-row: 1/2;
     font-size: 8.5vw;
     font-family: var(--header-font);
-    margin-top: 5%;
+    margin: 5%;
 }
 
 #menu {
@@ -42,7 +42,7 @@ header h1 {
     border: none;
 	background-color: #fefdf3;
  	position: absolute;
-	top: 1.25rem;
+	top: 1rem;
 	right: 1rem;
     grid-column: 3/4;
     grid-row: 1/2;

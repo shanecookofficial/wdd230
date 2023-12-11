@@ -80,21 +80,23 @@
             <div id="customer-info">
                 <div class="customer-info-block">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required pattern="^[A-Za-z\s]+$" title="Only letters and spaces allowed" />
+                    <input type="text" id="name" name="name" required pattern="^[A-Za-z\s]+$" title="Only letters and spaces allowed" placeholder="e.g., John Doe" />
                 </div>
                 <div class="customer-info-block">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
+                    <input type="email" id="email" name="email" required placeholder="e.g., john@example.com" />
                 </div>
                 <div class="customer-info-block">
                     <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required pattern="^\d{10}$" title="Please enter a valid 10-digit phone number ex. 2081234567" />
+                    <input type="tel" id="phone" name="phone" required pattern="^\d{10}$" title="Please enter a valid 10-digit phone number ex. 2081234567" placeholder="e.g., 2081234567" />
                 </div>
                 <div class="customer-info-block">
                     <label for="special_instructions">Special Instructions:</label>
-                    <textarea id="special_instructions" name="special_instructions" rows="4"></textarea>
+                    <textarea id="special_instructions" name="special_instructions" rows="4" placeholder="Any special instructions or notes"></textarea>
                 </div>
             </div>
+            
+
             <div id="submit-container">
                 <input id="submit" type="submit" value="Submit">
             </div>
