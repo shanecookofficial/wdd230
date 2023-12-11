@@ -295,3 +295,57 @@ iframe {
 #order-hero img{
     width: 100%;
 }
+
+#order-main {
+    margin: 0 5% 0 5%;
+}
+
+.fruit-selection-block {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5% 0 5% 0;
+}
+
+select {
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.label {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+}
+
+.value {
+    display: inline-block;
+    text-align: center;
+}
+
+#calories,
+#protein,
+#carbs,
+#fat,
+#sugar {
+    display: inline-block;
+}
+
+
+#customer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-info-block {
+    display: grid;
+    margin: 3% 0 3% 0;
+}
+
+#submit-container {
+    text-align: center;
+    padding: 5%;
+}
+
+#submit {
+    font-size: 7vw;
+}
