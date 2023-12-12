@@ -32,11 +32,10 @@ header a img{
 header h1 {
     grid-column: 2/3;
     grid-row: 1/2;
-    font-size: 8vw;
+    font-size: 7.5vw;
     font-family: var(--header-font);
     margin: 5%;
-    text-align: center;
-    justify-self: center;
+    text-align: left;
 }
 
 #menu {
@@ -403,4 +402,8 @@ select {
     display: flex;
     justify-content: space-around;
     padding: 3%;
+}
+
+#contact-us-main {
+    text-align: center;
 }

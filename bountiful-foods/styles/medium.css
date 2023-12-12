@@ -250,4 +250,12 @@
     #resources-main p {
         font-size: 2.5vw;
     }
+
+    #contact-us-main h3 {
+        font-size: 6vw;
+    }
+
+    #contact-us-main p {
+        font-size: 4vw;
+    }
 }
