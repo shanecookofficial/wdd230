@@ -165,4 +165,73 @@
     #submit {
         font-size: 5vw;
     }
+
+    #confirmation-main p {
+        font-size: 2.5vw;
+    }
+
+    #confirmation-main h2 {
+        font-size: 5vw;
+        margin-top: 0;
+    }
+
+    #order-time-message {
+        font-size: 2.5vw;
+    }
+
+    #summary {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    #summary h3 {
+        text-align: center;
+        font-size: 4vw;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    #summary h4 {
+        font-size: 3.5vw;
+    }
+
+    #summary p, li {
+        font-size: 3vw;
+    }
+
+    #fruits-summary {
+        text-align: center;
+    }
+
+    #special-instructions-container {
+        display: block;
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+
+    #special-instructions-container p:nth-of-type(1) {
+        text-align: center;
+    }
+
+    #nutrition-info-confirmation div{
+        margin-left: 30%;
+    }
+
+    #nutrition-info-confirmation h3 {
+        text-align: center;
+        font-size: 4vw;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    #review {
+        font-size: 3.5vw;
+    }
+
+    #customer-service {
+        text-align: center;
+    }
 }

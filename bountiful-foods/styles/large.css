@@ -247,4 +247,36 @@
     #submit {
         font-size: 3vw;
     }
+
+    #confirmation-main p {
+        font-size: 1.5vw;
+    }
+
+    #confirmation-main h2 {
+        font-size: 2.5vw;
+    }
+
+    #confirmation-main h3 {
+        font-size: 2vw;
+        margin-top: 1%;
+    }
+
+    #confirmation-main hr {
+        margin: 0 15% 0 15%;
+    }
+
+    #summary h4 {
+        font-size: 1.5vw;
+    }
+
+    #summary p, li {
+        font-size: 1.25vw;
+    }
+
+    #review {
+        font-size: 2vw;
+        margin: 1% 30% 0 30%;
+    }
+
+
 }

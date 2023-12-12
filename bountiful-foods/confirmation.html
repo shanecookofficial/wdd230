@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods | Shane Cook's WDD 230 Final Project">
+    <meta name="author" content="Shane Cook">
+    <meta property="og:url" content="https://shanecookofficial.github.io/wdd230/bountiful-foods/about-us.html" />
+    <meta property="og:title" content="About Us | Bountiful Foods" />
+    <meta property="og:image" content="images/bf-optimized-logo" />
+    <meta property="og:type" content="website" />
+    <title>About Us | Bountiful Foods</title>
+
+    <!-- CSS/Style Files -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- CSS/Style Files -->
+
+    <!-- JavaScript Files -->
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/confirmation.js" defer></script>
+    <!-- JavaScript Files -->
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="images/bf-optimized-logo.png"></a>
+        <h1>Bountiful Foods</h1>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home" class="animated-underline-hover">Home</a></li>
+                <li><a href="order.html" title="Order" class="active animated-underline-hover">Order</a></li>
+                <li><a href="about-us.html" title="About Us" class="animated-underline-hover">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="confirmation-main">
+        <h2>Thanks for ordering <span id="customer-first-name">name</span>!</h2>
+        <p id="order-time-message">Your <strong><span id="drink-name"></span></strong> smoothie should be ready in about <span id="order-time"></span> minutes.</p>
+        <hr>
+        <div id="summary">
+            <h3>Summary</h3>
+            <div id="fruits-summary">
+                <h4>Fruits</h4>
+                <ul>
+                    <li>- <span id="fruit-1"></span></li>
+                    <li>- <span id="fruit-2"></span></li>
+                    <li>- <span id="fruit-3"></span></li>
+                </ul>
+            </div>
+            <div id="your-info">
+                <h4>Your Info</h4>
+                <p>Name: <span id="customer-name"></span></p>
+                <p>Email: <span id="email"></span></p>
+                <p>Phone: <span id="phone"></span></p>
+            </div>
+            <div id="special-instructions-container">
+                <p>Special Instructions</p>
+                <p id="special_instructions"></p>
+            </div>
+        </div>
+        <hr>
+        <div id="nutrition-info-confirmation">
+            <h3>Nutrition Info</h3>
+            <div>
+                <p><span class="label">Calories:</span> <span class="value" id="calories"></span></p>
+                <p><span class="label">Protein:</span> <span class="value" id="protein"></span></p>
+                <p><span class="label">Carbs:</span> <span class="value" id="carbs"></span></p>
+                <p><span class="label">Fat:</span> <span class="value" id="fat"></span></p>
+                <p><span class="label">Sugar:</span> <span class="value" id="sugar"></span></p>
+            </div> 
+        </div>
+        <hr> 
+        <div id="review" >
+            <a href="https://www.facebook.com/">Tell us how we did!</a>
+        </div>   
+        <p id="customer-service">If there is a problem with your order, please <a href="#">contact us</a>.</p>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            <a href="#" class="animated-underline-hover">Contact Us</a> |
+            <a href="#" class="animated-underline-hover">Resources</a>
+        </p>
+        <p>&copy;<span id="year"></span> Bountiful Foods</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <div id="social-media-links">
+            <a target="_blank" href="https://www.facebook.com/">
+                <picture>
+                    <source srcset="images/Facebook_Logo_Primary-small.webp" media="(max-width: 500px)">
+                    <img src="images/Facebook_Logo_Primary.webp" alt="Facebook Logo" loading="lazy">
+                </picture> <!--https://about.meta.com/brand/resources/facebookapp/logo/-->
+            </a>
+            <a href="https://www.instagram.com/">
+                <picture>
+                    <source srcset="images/Instagram_Glyph_Gradient-small.webp" media="(max-width: 500px)">
+                    <img src="images/Instagram_Glyph_Gradient.webp" alt="Instagram Logo" loading="lazy">
+                </picture> <!--https://about.meta.com/brand/resources/instagram/instagram-brand/-->
+            </a>
+            <a href="https://twitter.com/?lang=en">
+                <picture>
+                    <source srcset="images/x-logo-black-small.webp" media="(max-width: 500px)">
+                    <img src="images/x-logo-black.webp" alt="X Logo" loading="lazy">
+                </picture> <!--https://about.twitter.com/en/who-we-are/brand-toolkit-->
+            </a>
+            <a href="https://www.tiktok.com/en/">
+                <picture>
+                    <source srcset="images/TikTok_Icon_Black_Circle-small.webp" media="(max-width: 500px)">
+                    <img src="images/TikTok_Icon_Black_Circle.webp" alt="X Logo" loading="lazy">
+                </picture> <!--https://developers.tiktok.com/doc/getting-started-design-guidelines?enter_method=left_navigation-->
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -32,18 +32,20 @@ header a img{
 header h1 {
     grid-column: 2/3;
     grid-row: 1/2;
-    font-size: 8.5vw;
+    font-size: 8vw;
     font-family: var(--header-font);
     margin: 5%;
+    text-align: center;
+    justify-self: center;
 }
 
 #menu {
-	font-size: 2.5rem;
+	font-size: 2rem;
     border: none;
 	background-color: #fefdf3;
  	position: absolute;
-	top: 1rem;
-	right: 1rem;
+	top: 1.25rem;
+	right: 1.25rem;
     grid-column: 3/4;
     grid-row: 1/2;
 }
@@ -348,4 +350,39 @@ select {
 
 #submit {
     font-size: 7vw;
+}
+
+#confirmation-main {
+    margin: 0 5% 0 5%;
+}
+
+#confirmation-main h2 {
+    text-align: center;
+}
+
+#order-time-message {
+    text-align: center;
+}
+
+#summary h4 {
+    margin-bottom: 0;
+}
+
+#summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#review {
+    text-align: center;
+    background-color: var(--font-color);
+    font-size: 6vw;
+    border-radius: 15px;
+    margin: 0 10% 0 10%;
+    padding: 2%;
+}
+
+#review a {
+    color: var(--background-color);
+    text-decoration: none;
 }

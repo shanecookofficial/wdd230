@@ -10,19 +10,20 @@ async function fetchFruitsData() {
     }
 }
 
-
-// Function to populate dropdown options
 function populateDropdowns(fruitsData) {
+    // Sort the fruitsData array alphabetically by the 'name' property
+    fruitsData.sort((a, b) => a.name.localeCompare(b.name));
+  
     const dropdowns = document.querySelectorAll('select');
     dropdowns.forEach(dropdown => {
-        fruitsData.forEach(fruit => {
-            const option = document.createElement('option');
-            option.value = fruit.name;
-            option.textContent = fruit.name;
-            dropdown.appendChild(option);
-        });
+      fruitsData.forEach(fruit => {
+        const option = document.createElement('option');
+        option.value = fruit.name;
+        option.textContent = fruit.name;
+        dropdown.appendChild(option);
+      });
     });
-}
+  }
 
 // Function to calculate and update nutritional information
 function updateNutrition(fruitsData) {
