@@ -262,6 +262,10 @@ footer a {
     margin: 5%;
 }
 
+#aboutus-main img {
+    width: 100%;
+}
+
 iframe {
     width: 100%;
 }
