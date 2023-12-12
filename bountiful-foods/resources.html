@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods | Shane Cook's WDD 230 Final Project">
+    <meta name="author" content="Shane Cook">
+    <meta property="og:url" content="https://shanecookofficial.github.io/wdd230/bountiful-foods/index.html" />
+    <meta property="og:title" content="Home | Bountiful Foods" />
+    <meta property="og:image" content="images/bf-optimized-logo" />
+    <meta property="og:type" content="website" />
+    <title>Home | Bountiful Foods</title>
+
+    <!-- CSS/Style Files -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- CSS/Style Files -->
+
+    <!-- JavaScript Files -->
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather-card.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/counter.js" defer></script>
+    <!-- JavaScript Files -->
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="images/bf-optimized-logo.png"></a>
+        <h1>Bountiful Foods</h1>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home" class="active animated-underline-hover">Home</a></li>
+                <li><a href="order.html" title="Order" class="animated-underline-hover">Order</a></li>
+                <li><a href="about-us.html" title="About Us" class="animated-underline-hover">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="resources-main">
+        <h2>Resources</h2>
+        <p>I have thoroughly enjoyed working on this project. I spent the past several weeks putting my
+            heart and soul into this project and I couldn't have done it without the resources I compiled
+            to complete this site.
+        </p>
+        <div id="images">
+            <h3>Images</h3>
+            <h4>Bountiful Foods Logo</h4>
+            <img id="logo-showcase" src="images/bf-optimized-logo.png">
+            <p>I am extremely proud of this logo. When I was designing a logo for Bountiful Foods, I wanted
+                to have a logo that held a strong grasp on the idea of organic, locally sourced foods. I was able
+                to come up with several versions at the beginning and settled on the horizon and rolling California hills
+                up top and a pleathora of fresh grown foods at the bottom.
+            </p>
+            <picture>
+                <h4>Home Page Hero Image</h4>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-optimized.png" alt="Fresh Fruit" loading="lazy">
+                <p>This image is a photo taken by Alex Raths in Germany. When I was looking for hero images to
+                    really make my home page pop, this one stuck out more than all of the others. Thank you Alex
+                    for creating an absolutely stunning image. If you are interested in viewing the image or
+                    checking out more of Alex's work, click this <a href="https://www.istockphoto.com/photo/assortment-of-colorful-ripe-tropical-fruits-top-view-gm995518546-269463390?phrase=alex+raths&searchscope=image%2Cfilm" target="_blank">link</a>.
+                </p>
+            </picture> <!--https://www.istockphoto.com/photo/assortment-of-colorful-ripe-tropical-fruits-top-view-gm995518546-269463390?phrase=alex+raths&searchscope=image%2Cfilm-->
+            <picture>
+                <h4>Carlsbad State Beach Image</h4>
+                <source srcset="images/carlsbadstatebeach-small.webp" media="(max-width: 500px)">
+                <source srcset="images/carlsbadstatebeach-medium.webp" media="(max-width: 1000px)">
+                <img src="images/carlsbadstatebeach-optimized.jpeg" alt="Carlsbad State Beach" loading="lazy"> <!--https://wavehuggers.com/wp-content/uploads/2022/01/samantha-jean-JzxUXm7GFGk-unsplash1-300x242.jpg-->
+                <p>I feel like this image of the Carlsbad State beach really brings a warm homey feel to the site. I was
+                    unable to find the original capture of this image but I do want to thank Wavehuggers for including it on
+                    their site. The image name contains the name Samantha Jean which makes me assume they were the one who took this photo.
+                    I wouldn't have been able to find the perfect image to capture this aura of Carlsbad. The link to
+                    where I found the image is <a href="https://wavehuggers.com/wp-content/uploads/2022/01/samantha-jean-JzxUXm7GFGk-unsplash1-300x242.jpg" target="_blank">here</a>.
+                </p>
+            </picture>
+            <picture>
+                <h4>Order Page Hero Image</h4>
+                <source srcset="images/order-hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/order-hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/order-hero-optimized.webp" alt="Smoothies" loading="lazy">
+                <p>These smoothies are the first thing a user sees when they go to place an order with Bountiful Foods. They capture the
+                    rich and organic feel that Bountiful Foods brings to the table. I was unable to find the original source but thanks to USA Today I was able
+                    to find this image for the site. Here is the <a href="https://www.usatoday.com/gcdn/-mm-/6e8980f94a4c041cf4d2f36bd159bb7b2c14fbdd/c=0-863-4493-3401/local/-/media/2017/06/29/USATODAY/USATODAY/636343393406681509-GettyImages-527673038.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp" target="_blank">link</a> if you are interested in using this image.
+                </p>
+            </picture> <!--https://www.usatoday.com/gcdn/-mm-/6e8980f94a4c041cf4d2f36bd159bb7b2c14fbdd/c=0-863-4493-3401/local/-/media/2017/06/29/USATODAY/USATODAY/636343393406681509-GettyImages-527673038.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp-->
+            <picture id="farmstand">
+                <h4>About Us Page Farmstand Image</h4>
+                <source srcset="images/farmstand-small.webp" media="(max-width: 500px)">
+                <source srcset="images/farmstand-medium.webp" media="(max-width: 1000px)">
+                <img src="images/farmstand-optimized.webp" alt="Farm Stand" loading="lazy">
+                <p>There is a part of the about us page that talks about Bountiful Foods's fictitious history.
+                    I really wanted to find an image that captured the feel of an old farm stand and thanks to Marc,
+                    I was able to find that image. Mark has <a href="https://www.flickr.com/photos/73697029@N00/" target="_blank">a lot of content</a>
+                    but if you are interested in the original farmer stand image, you can find that <a href="https://www.flickr.com/photos/73697029@N00/5028657524/" target="_blank">here</a>.
+                </p>
+            </picture> <!--https://www.flickr.com/photos/73697029@N00/5028657524/-->
+            <picture id="carlsbad-coast">
+                <h4>About Us Page Carlsbad Coast Image</h4>
+                <source srcset="images/carlsbad-coast-small.webp" media="(max-width: 500px)">
+                <source srcset="images/carlsbad-coast-medium.webp" media="(max-width: 1000px)">
+                <img src="images/carlsbad-coast-optimized.webp" alt="Carlsbad Coast" loading="lazy">
+                <p>This image is probably my favorite by far. The aerial view contrasts the divide of the ocean, beach, and city. Carlsbad is a really
+                    unique part of the world and this image showcases that diversity and authenticity. This image was taken by <a href="https://unsplash.com/@vincefleming" target="_blank">Vince Fleming</a>
+                    and they do such an amazing job I can't properly describe how much I love this image. If you are interested in the original image, you can check it out <a href="https://unsplash.com/photos/aerial-photo-of-city-78U2m_4XbKM" target="_blank">here</a>.
+                </p>
+            </picture> <!--https://unsplash.com/photos/aerial-photo-of-city-78U2m_4XbKM-->
+            <div>
+                <h4>Social Media Links</h4>
+                <div id="social-media-links-showcase">
+                    <a target="_blank" href="https://about.meta.com/brand/resources/facebook/logo/">
+                        <picture>
+                            <source srcset="images/Facebook_Logo_Primary-small.webp" media="(max-width: 500px)">
+                            <img src="images/Facebook_Logo_Primary.webp" alt="Facebook Logo" loading="lazy">
+                        </picture> <!--https://about.meta.com/brand/resources/facebookapp/logo/-->
+                    </a>
+                    <a href="https://about.meta.com/brand/resources/instagram/instagram-brand/">
+                        <picture>
+                            <source srcset="images/Instagram_Glyph_Gradient-small.webp" media="(max-width: 500px)">
+                            <img src="images/Instagram_Glyph_Gradient.webp" alt="Instagram Logo" loading="lazy">
+                        </picture> <!--https://about.meta.com/brand/resources/instagram/instagram-brand/-->
+                    </a>
+                    <a href="https://about.twitter.com/en/who-we-are/brand-toolkit">
+                        <picture>
+                            <source srcset="images/x-logo-black-small.webp" media="(max-width: 500px)">
+                            <img src="images/x-logo-black.webp" alt="X Logo" loading="lazy">
+                        </picture> <!--https://about.twitter.com/en/who-we-are/brand-toolkit-->
+                    </a>
+                    <a href="https://developers.tiktok.com/doc/getting-started-design-guidelines?enter_method=left_navigation">
+                        <picture>
+                            <source srcset="images/TikTok_Icon_Black_Circle-small.webp" media="(max-width: 500px)">
+                            <img src="images/TikTok_Icon_Black_Circle.webp" alt="X Logo" loading="lazy">
+                        </picture> <!--https://developers.tiktok.com/doc/getting-started-design-guidelines?enter_method=left_navigation-->
+                    </a>
+                </div>
+                <p>All of these social media links are thanks to their media provider. Clicking each one will send you to their respective
+                    brand resource center where you can find official logos for public and commercial use.</p>
+            </div>
+        </div>
+        <div id="api">
+            <h3>APIs</h3>
+            <h4>OpenWeather API</h4>
+            <p>This weather card on the home page and all the data within is thanks to the OpenWeather API. You can check them out and their documentation <a href="https://openweathermap.org/api">here</a>.</p>
+            <h4>Fruityvice API</h4>
+            <p>The Fruityvice API provided all of the data for the fruits used in the ordering process for a smoothie at Bountiful Foods. You can check them out <a href="https://fruityvice.com/">here</a>.</p>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            <a href="#" class="animated-underline-hover">Contact Us</a> |
+            <a href="resources.html" class="animated-underline-hover">Resources</a>
+        </p>
+        <p>&copy;<span id="year"></span> Bountiful Foods</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <div id="social-media-links">
+            <a target="_blank" href="https://www.facebook.com/">
+                <picture>
+                    <source srcset="images/Facebook_Logo_Primary-small.webp" media="(max-width: 500px)">
+                    <img src="images/Facebook_Logo_Primary.webp" alt="Facebook Logo" loading="lazy">
+                </picture> <!--https://about.meta.com/brand/resources/facebookapp/logo/-->
+            </a>
+            <a href="https://www.instagram.com/">
+                <picture>
+                    <source srcset="images/Instagram_Glyph_Gradient-small.webp" media="(max-width: 500px)">
+                    <img src="images/Instagram_Glyph_Gradient.webp" alt="Instagram Logo" loading="lazy">
+                </picture> <!--https://about.meta.com/brand/resources/instagram/instagram-brand/-->
+            </a>
+            <a href="https://twitter.com/?lang=en">
+                <picture>
+                    <source srcset="images/x-logo-black-small.webp" media="(max-width: 500px)">
+                    <img src="images/x-logo-black.webp" alt="X Logo" loading="lazy">
+                </picture> <!--https://about.twitter.com/en/who-we-are/brand-toolkit-->
+            </a>
+            <a href="https://www.tiktok.com/en/">
+                <picture>
+                    <source srcset="images/TikTok_Icon_Black_Circle-small.webp" media="(max-width: 500px)">
+                    <img src="images/TikTok_Icon_Black_Circle.webp" alt="X Logo" loading="lazy">
+                </picture> <!--https://developers.tiktok.com/doc/getting-started-design-guidelines?enter_method=left_navigation-->
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

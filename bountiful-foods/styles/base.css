@@ -390,3 +390,17 @@ select {
     color: var(--background-color);
     text-decoration: none;
 }
+
+#resources-main {
+    margin: 0 5% 0 5%;
+}
+
+#resources-main img {
+    width: 100%;
+}
+
+#social-media-links-showcase  {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+}

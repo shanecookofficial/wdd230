@@ -234,4 +234,20 @@
     #customer-service {
         text-align: center;
     }
+
+    #resources-main h2 {
+        font-size: 5vw;
+    }
+
+    #resources-main h3 {
+        font-size: 4vw;
+    }
+
+    #resources-main h4 {
+        font-size: 3vw;
+    }
+
+    #resources-main p {
+        font-size: 2.5vw;
+    }
 }
